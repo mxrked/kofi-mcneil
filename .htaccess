@@ -1,11 +1,11 @@
 # Enables CORS Policy for fonts, etc.
 <FilesMatch "\.(ttf)$">
-    Header set Access-Control-Allow-Origin "PUT_DOMAIN_HERE"
+    Header set Access-Control-Allow-Origin "https://bucolic-cuchufli-d1cce2.netlify.app/"
 </FilesMatch>
 <FilesMatch "\.(otf)$">
-    Header set Access-Control-Allow-Origin "PUT_DOMAIN_HERE"
+    Header set Access-Control-Allow-Origin "https://bucolic-cuchufli-d1cce2.netlify.app/"
 </FilesMatch>
-# Header set Access-Control-Allow-Origin "PUT_DOMAIN_HERE"
+# Header set Access-Control-Allow-Origin "https://bucolic-cuchufli-d1cce2.netlify.app/ http://bucolic-cuchufli-d1cce2.netlify.app/"
 
 # Browser Caching Expires - Helps boost performance with caching
 <IfModule mod_expires.c>
