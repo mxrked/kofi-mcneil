@@ -1,0 +1,11 @@
+.full-second {
+  transition: 1s ease-in-out !important;
+}
+
+.half-second {
+  transition: 0.5s ease-in-out !important;
+}
+
+.hidden {
+  display: none !important;
+}/*# sourceMappingURL=global_classnames.css.map */
