@@ -85,7 +85,7 @@
             ul {
               width: 100%;
               @include displayElement(flex, flex-end, center);
-              font-family: "Lato Medium";
+              font-family: "Lato Bold";
               font-size: $Link;
 
               li {
