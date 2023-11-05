@@ -6,6 +6,8 @@
 
 import { useRouter } from "next/router";
 
+import DeclareStorageVariable from "@/assets/functions/data/storage/DeclareStorageVariable";
+
 import styles from "../../../styles/modules/Nav/Nav.module.css";
 
 export const MobileNav = () => {
@@ -70,7 +72,56 @@ export const MobileNav = () => {
               className={`${styles.mobile_nav_inner_side} ${styles.mobile_nav_R} col-lg-5 col-md-5 col-sm-5 col-xs-5`}
             >
               <div className={`${styles.mobile_nav_inner_side_cnt}`}>
-                <button id="mobileNavMenuToggler">
+                <button
+                  id="mobileNavMenuToggler"
+                  onClick={() => {
+                    DeclareStorageVariable(
+                      "session",
+                      "Mobile Nav Opened",
+                      true
+                    );
+
+                    document.body.style.overflowY = "hidden";
+                    document.body.style.pointerEvents = "none";
+
+                    document.getElementById("mobileNavMenu").style.display =
+                      "flex";
+
+                    setTimeout(() => {
+                      document.getElementById(
+                        "mobileNavMenuDarken"
+                      ).style.opacity = 1;
+                      document.getElementById(
+                        "mobileNavMenuDarken"
+                      ).style.visibility = "visible";
+
+                      document.getElementById(
+                        "mobileNavMenuMain"
+                      ).style.transform = "translateX(0)";
+                    }, 600);
+
+                    setTimeout(() => {
+                      document.getElementById(
+                        "mobileNavMenuMainCnt"
+                      ).style.opacity = 1;
+                      document.getElementById(
+                        "mobileNavMenuMainCnt"
+                      ).style.visibility = "visible";
+                    }, 1300);
+
+                    setTimeout(() => {
+                      document.getElementById(
+                        "mobileNavMenuDarken"
+                      ).style.pointerEvents = "auto";
+                      document.getElementById(
+                        "mobileNavMenuMain"
+                      ).style.overflowY = "auto";
+                      document.getElementById(
+                        "mobileNavMenuMain"
+                      ).style.pointerEvents = "auto";
+                    }, 2100);
+                  }}
+                >
                   <span className="orientation-change-element half-second" />
                   <span className="orientation-change-element half-second" />
                   <span className="orientation-change-element half-second" />
