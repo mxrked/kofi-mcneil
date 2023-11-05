@@ -183,7 +183,7 @@ export default async function handler(req, res) {
       host: { $in: EXCLUDED_SUBDOMAINS },
     });
     await DB.collection("ips").deleteMany({
-      host: { $regex: /inquisitive-khapse-802fcf\.netlify\.app/ },
+      host: { $regex: /bucolic-cuchufli-d1cce2\.netlify\.app/ },
     });
 
     // Removing entries that relate to Microsoft Azure
