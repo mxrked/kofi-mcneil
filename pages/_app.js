@@ -16,6 +16,7 @@ import NProgress from "nprogress";
 import DeclareStorageVariable from "@/assets/functions/data/storage/DeclareStorageVariable";
 import RemoveStorageVariable from "@/assets/functions/data/storage/RemoveStorageVariable";
 import CheckUserDevice from "@/assets/functions/dom/checkers/CheckUserDevice";
+import CheckMobileNavMenuStatus from "@/assets/functions/dom/checkers/CheckMobileNavMenuStatus";
 import CheckScreenOrientation from "@/assets/functions/dom/checkers/CheckScreenOrientation";
 
 // Component Imports
@@ -256,6 +257,21 @@ function MyApp({ Component, pageProps }) {
       CheckScreenOrientation();
     });
   }, []);
+
+  //! Checking Mobile Nav Menu Status
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      CheckMobileNavMenuStatus();
+    });
+
+    window.addEventListener("load", () => {
+      CheckMobileNavMenuStatus();
+    });
+
+    router.events.on("routeChangeComplete", () => {
+      CheckMobileNavMenuStatus();
+    });
+  }, [router]);
 
   //! Check User Device
   useEffect(() => {
