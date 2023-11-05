@@ -89,7 +89,11 @@ export const MobileNavMenu = () => {
                   className="orientation-change-element half-second"
                   style={{ cursor: "pointer" }}
                   onClick={() => {
-                    router.push("/");
+                    closeMobileNav();
+
+                    setTimeout(() => {
+                      router.push("/");
+                    }, 1790);
                   }}
                 >
                   Go Home
@@ -116,7 +120,11 @@ export const MobileNavMenu = () => {
                   className="orientation-change-element half-second"
                   style={{ cursor: "pointer" }}
                   onClick={() => {
-                    router.push("/bio-services");
+                    closeMobileNav();
+
+                    setTimeout(() => {
+                      router.push("/bio-services");
+                    }, 1790);
                   }}
                 >
                   Bio/Services
@@ -143,7 +151,11 @@ export const MobileNavMenu = () => {
                   className="orientation-change-element half-second"
                   style={{ cursor: "pointer" }}
                   onClick={() => {
-                    router.push("/contact#contact_form");
+                    closeMobileNav();
+
+                    setTimeout(() => {
+                      router.push("/contact#contact_form");
+                    }, 1790);
                   }}
                 >
                   Contact Me
@@ -167,7 +179,11 @@ export const MobileNavMenu = () => {
             {router.pathname !== "/contact" ? (
               <li
                 onClick={() => {
-                  router.push("/contact#consultation");
+                  closeMobileNav();
+
+                  setTimeout(() => {
+                    router.push("/contact#consultation");
+                  }, 1790);
                 }}
               >
                 <span
