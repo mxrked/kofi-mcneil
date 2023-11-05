@@ -79,31 +79,31 @@ export default function Home({ TOTAL_NUMBER_OF_IPS, PH_ICONS, PH_INDEX }) {
   const router = useRouter();
 
   // Triggering trackWebsiteVisits.js
-  // useEffect(() => {
-  //   const FETCH_WEBSITE_VISITS = async () => {
-  //     try {
-  //       const isOnLocalHost = await checkLocation();
-  //       const response = await fetch("/api/trackWebsiteVisits.js");
+  useEffect(() => {
+    const FETCH_WEBSITE_VISITS = async () => {
+      try {
+        const isOnLocalHost = await checkLocation();
+        const response = await fetch("/api/trackWebsiteVisits.js");
 
-  //       if (response.ok) {
-  //         const data = await response.json();
+        if (response.ok) {
+          const data = await response.json();
 
-  //         if (isOnLocalHost) {
-  //           console.log("-- On Localhost --");
-  //           console.log("Fetched Data: ", data);
-  //         }
-  //       } else {
-  //         console.log("-- On Localhost --");
-  //         console.error("Fetch request failed with status: ", response.status);
-  //         return;
-  //       }
-  //     } catch (error) {
-  //       console.error("Error while fetching data: ", error);
-  //     }
-  //   };
+          if (isOnLocalHost) {
+            console.log("-- On Localhost --");
+            console.log("Fetched Data: ", data);
+          }
+        } else {
+          console.log("-- On Localhost --");
+          console.error("Fetch request failed with status: ", response.status);
+          return;
+        }
+      } catch (error) {
+        console.error("Error while fetching data: ", error);
+      }
+    };
 
-  //   FETCH_WEBSITE_VISITS();
-  // }, []);
+    FETCH_WEBSITE_VISITS();
+  }, []);
 
   // Displaying the number of page visits
   useEffect(() => {
