@@ -115,7 +115,7 @@
 }
 .desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_L .desktop_nav_inner_side_cnt .logo .bottom_text {
   display: block;
-  font-family: "Lato Medium";
+  font-family: "Lato Regular";
   opacity: 0.7;
   font-size: clamp(0.8rem, 0.24vw + 0.81rem, 1.04rem);
   margin-top: 5px;
