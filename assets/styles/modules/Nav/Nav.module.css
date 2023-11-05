@@ -215,6 +215,98 @@
   margin-bottom: 9px;
 }
 
+.mobile_nav_menu .darken {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 400;
+  cursor: pointer;
+}
+.mobile_nav_menu .mobile_nav_menu_main {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  background-color: white;
+  z-index: 401;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt {
+  opacity: 1;
+  visibility: visible;
+}
+.mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top {
+  text-align: center;
+}
+.mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top button {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top button span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 4px;
+  width: 35px;
+  background-color: #040d12;
+  display: block;
+  border-radius: 5px;
+}
+.mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top button span:first-child {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top button span:last-child {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top .logo {
+  display: grid;
+  text-align: center;
+}
+.mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top .logo .top_text {
+  display: block;
+  font-family: "Lato Bold";
+  font-weight: bold;
+  font-size: 23px;
+}
+.mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top .logo .top_text .colored_text {
+  color: #19a7ce;
+}
+.mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top .logo .bottom_text {
+  display: block;
+  font-family: "Lato Bold";
+  opacity: 0.7;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt ul {
+  margin-top: 70px;
+  text-align: center;
+  font-family: "Lato Bold";
+  font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+}
+.mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt ul li {
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt ul li span:hover {
+  color: #00a9ff;
+}
+
 .mobile_nav_menu {
   display: none;
 }
@@ -365,6 +457,27 @@
     margin-top: 7px;
     margin-bottom: 7px;
   }
+  .mobile_nav_menu .mobile_nav_menu_main {
+    max-width: 390px;
+  }
+  .mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top button {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 20px;
+  }
+  .mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top button span {
+    width: 30px;
+    height: 3px;
+  }
+  .mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top .logo .top_text {
+    font-size: 17px;
+  }
+  .mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top .logo .bottom_text {
+    font-size: 12px;
+  }
+  .mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt ul {
+    margin-top: 45px;
+  }
 }
 @media all and (max-width: 419px) {
   .nav_top .nav_top_inner {
@@ -455,6 +568,28 @@
   .mobile_nav .mobile_nav_inner .mobile_nav_inner_box .mobile_nav_inner_row .mobile_nav_R .mobile_nav_inner_side_cnt button span:nth-child(even) {
     margin-top: 6px;
     margin-bottom: 6px;
+  }
+  .mobile_nav_menu .mobile_nav_menu_main {
+    max-width: 390px;
+  }
+  .mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top button {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  .mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top button span {
+    width: 25px;
+    height: 3px;
+  }
+  .mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top .logo .top_text {
+    font-size: 16px;
+  }
+  .mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top .logo .bottom_text {
+    font-size: 11px;
+  }
+  .mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt ul {
+    margin-top: 45px;
+    font-size: 15px;
   }
 }
 @media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
@@ -558,6 +693,31 @@
   .mobile_nav .mobile_nav_inner .mobile_nav_inner_box .mobile_nav_inner_row .mobile_nav_R .mobile_nav_inner_side_cnt button span:nth-child(even) {
     margin-top: 7px;
     margin-bottom: 7px;
+  }
+  .mobile_nav_menu .mobile_nav_menu_main {
+    max-width: 390px;
+  }
+  .mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top button {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  .mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top button span {
+    width: 25px;
+    height: 3px;
+  }
+  .mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top .logo .top_text {
+    font-size: 16px;
+  }
+  .mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top .logo .bottom_text {
+    font-size: 11px;
+  }
+  .mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt ul {
+    margin-top: 35px;
+    font-size: 15px;
+  }
+  .mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt ul li {
+    margin-bottom: 10px;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
