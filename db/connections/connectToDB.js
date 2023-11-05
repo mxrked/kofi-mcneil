@@ -12,6 +12,8 @@ const OPTIONS = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 };
+const URI =
+  "mongodb+srv://admin:softskillitcommunications_DB_020700@ip-storage.tjqlwwg.mongodb.net/?retryWrites=true&w=majority";
 
 let client;
 let connection;
@@ -19,7 +21,7 @@ let connection;
 export async function connectDatabase() {
   try {
     if (!client || !client.connect()) {
-      client = new MongoClient(process.env.MONGO_URI, OPTIONS);
+      client = new MongoClient(URI, OPTIONS);
 
       if (!(await client.connect())) {
         console.log("Connecting to MongoDB failed");
