@@ -82,15 +82,10 @@ export default function Home({ TOTAL_NUMBER_OF_IPS, PH_ICONS, PH_INDEX }) {
   useEffect(() => {
     const FETCH_WEBSITE_VISITS = async () => {
       try {
-        const isOnLocalHost = await checkLocation();
         const response = await fetch("/api/trackWebsiteVisits.js");
 
         const data = await response.json();
-
-        if (isOnLocalHost) {
-          console.log("-- On Localhost --");
-          console.log("Fetched Data: ", data);
-        }
+        //   console.log("Fetched Data: ", data);
       } catch (error) {
         console.error("Error while fetching data: ", error);
       }
