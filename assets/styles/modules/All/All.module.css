@@ -13,4 +13,34 @@
 @font-face {
   font-family: "Lato Regular";
   src: url("https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/kofi-mcneil/fonts/Lato-Regular.ttf");
+}
+.loading_screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index: 700;
+}
+.loading_screen .loading_screen_cnt .loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #414141;
+  border-bottom-color: #256d85;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=All.module.css.map */
