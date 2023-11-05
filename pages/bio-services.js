@@ -89,7 +89,13 @@ export default function BioServices({
   useEffect(() => {
     const FETCH_WEBSITE_VISITS = async () => {
       try {
-        const response = await fetch("/api/trackWebsiteVisits.js");
+        const response = await fetch("/api/trackers/trackWebsiteVisits");
+
+        if (response.ok) {
+          console.log("Response is OK!");
+        } else {
+          console.error("Response is NOT ok...");
+        }
 
         const data = await response.json();
         //   console.log("Fetched Data: ", data);
