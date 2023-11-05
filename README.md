@@ -12,7 +12,7 @@ This is the website for IT Public Speaker/Consultant Kofi Mcneil
 
 ---
 
-Demo: https://bucolic-cuchufli-d1cce2.netlify.app/
+Demo: https://softskillitcommunications.com/
 
 ===
 
