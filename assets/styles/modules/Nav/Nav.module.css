@@ -42,7 +42,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-family: "Lato Medium";
+  font-family: "Lato Bold";
   font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
 }
 .nav_top .nav_top_inner .nav_top_inner_box .nav_top_inner_row .nav_top_L .nav_top_inner_side_cnt ul li {
