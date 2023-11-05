@@ -12,7 +12,7 @@ import DeclareStorageVariable from "../../data/storage/DeclareStorageVariable";
 import RemoveStorageVariable from "../../data/storage/RemoveStorageVariable";
 
 export default function CheckUserDevice(mobile, desktop) {
-  if (window.innerWidth > 991) {
+  if (window.innerWidth > 769) {
     mobile = false;
     desktop = true;
 
@@ -22,7 +22,7 @@ export default function CheckUserDevice(mobile, desktop) {
     }
   }
 
-  if (window.innerWidth <= 990) {
+  if (window.innerWidth <= 768) {
     mobile = true;
     desktop = false;
 
