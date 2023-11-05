@@ -13,6 +13,10 @@ import checkLocation from "@/assets/functions/async/checkLocation";
 // Component Imports
 import { LoadingScreen } from "@/assets/components/global/All/LoadingScreen";
 import { PageHead } from "@/assets/components/global/All/PageHead";
+import { NavTop } from "@/assets/components/global/Nav/NavTop";
+import { DesktopNav } from "@/assets/components/global/Nav/DesktopNav";
+import { MobileNav } from "@/assets/components/global/Nav/MobileNav";
+import { MobileNavMenu } from "@/assets/components/global/Nav/MobileNavMenu";
 
 // Style Imports
 // import "../assets/styles/modules/Contact/Contact.module.css";
@@ -116,9 +120,12 @@ export default function Contact({ TOTAL_NUMBER_OF_IPS, PH_ICONS, PH_CONTACT }) {
     <div id="PAGE" className="page half-second">
       <PageHead page_head_data={PH_CONTACT} icons_data={PH_ICONS} />
       <LoadingScreen />
+      <MobileNavMenu />
 
       <div id="PAGE_CNT" className="page-cnt half-second">
-        Contact
+        <NavTop />
+        <DesktopNav />
+        <MobileNav />
       </div>
     </div>
   );
