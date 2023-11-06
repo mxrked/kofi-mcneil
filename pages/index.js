@@ -28,16 +28,31 @@ import { IndexContact } from "@/assets/components/pages/Index/IndexContact";
 import "../assets/styles/modules/Index/Index.module.css";
 
 export async function getServerSideProps() {
+  const TESTIMONIALS_DATA_FILE_PATH = path.join(
+    process.cwd(),
+    "public/data/json/testimonials-data/",
+    "Testimonials.json"
+  );
+
+  const TESTIMONIALS_DATA_FILE_CONTENTS = fs.readFileSync(
+    TESTIMONIALS_DATA_FILE_PATH,
+    "utf-8"
+  );
+  let TESTIMONIALS_DATA = undefined;
+
   // Connecting to DB
   try {
     const DB = await connectDatabase();
 
+    TESTIMONIALS_DATA = JSON.parse(TESTIMONIALS_DATA_FILE_CONTENTS);
+
     if (!DB) {
+      console.log("NO DATA!");
+
       return {
         props: {
           TOTAL_NUMBER_OF_IPS: 0,
-          // PH_INDEX: null,
-          // PH_ICONS: null,
+          TESTIMONIALS_DATA,
         },
       };
     }
@@ -49,43 +64,27 @@ export async function getServerSideProps() {
 
     const TOTAL_NUMBER_OF_IPS = await DB.collection("ips").countDocuments();
 
-    // const PH_ICONS_FILE_PATH = path.join(
-    //   process.cwd(),
-    //   "public/data/json/page-head-data/",
-    //   "PH_Icons.json"
-    // );
-    // const PH_INDEX_FILE_PATH = path.join(
-    //   process.cwd(),
-    //   "public/data/json/page-head-data/",
-    //   "PH_Index.json"
-    // );
-
-    // const PH_ICONS_FILE_CONTENTS = fs.readFileSync(PH_ICONS_FILE_PATH, "utf-8");
-    // const PH_INDEX_FILE_CONTENTS = fs.readFileSync(PH_INDEX_FILE_PATH, "utf-8");
-
-    // const PH_ICONS = JSON.parse(PH_ICONS_FILE_CONTENTS);
-    // const PH_INDEX = JSON.parse(PH_INDEX_FILE_CONTENTS);
+    TESTIMONIALS_DATA = JSON.parse(TESTIMONIALS_DATA_FILE_CONTENTS);
 
     return {
       props: {
         TOTAL_NUMBER_OF_IPS,
-        // PH_INDEX,
-        // PH_ICONS,
+        TESTIMONIALS_DATA,
       },
     };
   } catch (error) {
     console.error("Error while fetching data:", error);
+
     return {
       props: {
         TOTAL_NUMBER_OF_IPS: 0,
-        // PH_INDEX: null,
-        // PH_ICONS: null,
+        TESTIMONIALS_DATA: null,
       },
     };
   }
 }
 
-export default function Home({ TOTAL_NUMBER_OF_IPS }) {
+export default function Home({ TOTAL_NUMBER_OF_IPS, TESTIMONIALS_DATA }) {
   const router = useRouter();
 
   // Triggering trackWebsiteVisits.js
@@ -119,6 +118,16 @@ export default function Home({ TOTAL_NUMBER_OF_IPS }) {
     }
   }, []);
 
+  // Displaying Testimonials
+  useEffect(() => {
+    if (
+      window.location.hostname === "127.0.0.1" ||
+      window.location.hostname === "localhost"
+    ) {
+      console.table(TESTIMONIALS_DATA);
+    }
+  }, []);
+
   return (
     <div id="PAGE" className="page half-second">
       <PH_Index />
@@ -133,7 +142,8 @@ export default function Home({ TOTAL_NUMBER_OF_IPS }) {
         <IndexTop />
         <IndexServices />
         <IndexConsultation />
-        <IndexTestimonials testimonials_data={undefined} />
+        {/**   */}
+        <IndexTestimonials testimonials_data={TESTIMONIALS_DATA} />
         <IndexContact />
       </div>
     </div>
