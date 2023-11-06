@@ -7,6 +7,10 @@
   src: url("https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/kofi-mcneil/fonts/Helvetica-Medium.otf");
 }
 @font-face {
+  font-family: "Lato Black";
+  src: url("https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/kofi-mcneil/fonts/Lato-Black.ttf");
+}
+@font-face {
   font-family: "Lato Bold";
   src: url("https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/kofi-mcneil/fonts/Lato-Bold.ttf");
 }
@@ -106,7 +110,7 @@
 }
 .desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_L .desktop_nav_inner_side_cnt .logo .top_text {
   display: block;
-  font-family: "Lato Bold";
+  font-family: "Lato Black";
   font-weight: bold;
   font-size: 26px;
 }
@@ -180,7 +184,7 @@
 }
 .mobile_nav .mobile_nav_inner .mobile_nav_inner_box .mobile_nav_inner_row .mobile_nav_L .mobile_nav_inner_side_cnt .logo .top_text {
   display: block;
-  font-family: "Lato Bold";
+  font-family: "Lato Black";
   font-weight: bold;
   font-size: 23px;
 }
@@ -279,7 +283,7 @@
 }
 .mobile_nav_menu .mobile_nav_menu_main .mobile_nav_menu_main_cnt .mobile_nav_menu_main_cnt_top .logo .top_text {
   display: block;
-  font-family: "Lato Bold";
+  font-family: "Lato Black";
   font-weight: bold;
   font-size: 23px;
 }

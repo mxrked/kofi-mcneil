@@ -7,10 +7,110 @@
   src: url("https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/kofi-mcneil/fonts/Helvetica-Medium.otf");
 }
 @font-face {
+  font-family: "Lato Black";
+  src: url("https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/kofi-mcneil/fonts/Lato-Black.ttf");
+}
+@font-face {
   font-family: "Lato Bold";
   src: url("https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/kofi-mcneil/fonts/Lato-Bold.ttf");
 }
 @font-face {
   font-family: "Lato Regular";
   src: url("https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/kofi-mcneil/fonts/Lato-Regular.ttf");
+}
+.index_top {
+  height: 950px;
+  position: relative;
+}
+.index_top .bg {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.index_top .bg_placeholder {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.index_top .index_top_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.index_top .index_top_overlay .index_top_overlay_cnt {
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.index_top .index_top_overlay .index_top_overlay_cnt .top_text {
+  font-family: "Lato Bold";
+  font-size: clamp(1.44rem, 2vw + 1.25rem, 2.15rem);
+  color: white;
+}
+.index_top .index_top_overlay .index_top_overlay_cnt h1 {
+  font-family: "Lato Black";
+  font-size: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.index_top .index_top_overlay .index_top_overlay_cnt p {
+  font-family: "Lato Regular";
+  font-size: clamp(1rem, 0.54vw + 1rem, 1.33rem);
+  color: white;
+  margin-bottom: 50px;
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.index_top .index_top_overlay .index_top_overlay_cnt ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 435px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.index_top .index_top_overlay .index_top_overlay_cnt ul li {
+  height: 50px;
+  font-family: "Lato Bold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link {
+  background-color: white;
+  color: #040d12;
+}
+.index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link:hover {
+  background-color: rgb(197, 197, 197);
+}
+.index_top .index_top_overlay .index_top_overlay_cnt ul .consultation_link {
+  background-color: #256d85;
+  color: white;
+}
+.index_top .index_top_overlay .index_top_overlay_cnt ul .consultation_link:hover {
+  background-color: #00a9ff;
 }/*# sourceMappingURL=Index.module.css.map */
