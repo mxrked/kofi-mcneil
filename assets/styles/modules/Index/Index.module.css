@@ -201,6 +201,90 @@
   background-color: #00a9ff;
 }
 
+.index_consultation {
+  overflow: hidden;
+}
+.index_consultation .index_consultation_inner .index_consultation_inner_box {
+  padding: 0;
+}
+.index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_inner_side {
+  height: 1150px;
+}
+.index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt .top_text {
+  font-family: "Lato Bold";
+  font-size: clamp(1.44rem, 2vw + 1.25rem, 2.15rem);
+  color: #040d12;
+  opacity: 0.7;
+}
+.index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt h2 {
+  font-family: "Lato Black";
+  font-size: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+  color: #040d12;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt p {
+  font-family: "Lato Regular";
+  font-size: clamp(1rem, 0.54vw + 1rem, 1.33rem);
+  color: #040d12;
+  margin-bottom: 50px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt div {
+  height: 50px;
+  font-family: "Lato Bold";
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #256d85;
+  color: white;
+}
+.index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt div:hover {
+  background-color: #00a9ff;
+}
+.index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_R {
+  position: relative;
+}
+.index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_R .bg {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(70%);
+}
+.index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_R .bg_placeholder {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(70%);
+}
+
 @media all and (max-width: 1995px) {
   .index_top {
     height: 740px;
@@ -244,6 +328,31 @@
     font-size: 20px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_R .index_services_inner_side_cnt div {
+    height: 45px;
+    font-size: 18px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_inner_side {
+    height: 900px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt {
+    max-width: 750px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt .top_text {
+    font-size: 25px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt h2 {
+    font-size: 42px;
+    max-width: 720px;
+    margin-left: 0;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt p {
+    font-size: 20px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt div {
     height: 45px;
     font-size: 18px;
   }
@@ -295,6 +404,31 @@
     font-size: 17px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_R .index_services_inner_side_cnt div {
+    height: 40px;
+    font-size: 17px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_inner_side {
+    height: 700px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt {
+    max-width: 750px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt .top_text {
+    font-size: 23px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt h2 {
+    font-size: 37px;
+    max-width: 620px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt p {
+    max-width: 600px;
+    font-size: 17px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt div {
     height: 40px;
     font-size: 17px;
   }
@@ -368,6 +502,48 @@
     margin-bottom: 35px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_R .index_services_inner_side_cnt div {
+    height: 40px;
+    font-size: 15px;
+  }
+  .index_consultation {
+    margin-top: 60px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_inner_side {
+    width: 100%;
+    height: 100%;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_R {
+    width: 100%;
+    height: 240px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_R .bg {
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt {
+    max-width: 750px;
+    text-align: center;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt .top_text {
+    font-size: 20px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt h2 {
+    font-size: 27px;
+    max-width: 360px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt p {
+    max-width: 400px;
+    font-size: 15px;
+    margin-bottom: 35px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt div {
     height: 40px;
     font-size: 15px;
   }
@@ -445,6 +621,50 @@
     margin-bottom: 35px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_R .index_services_inner_side_cnt div {
+    height: 35px;
+    font-size: 14px;
+  }
+  .index_consultation {
+    margin-top: 30px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_inner_side {
+    width: 100%;
+    height: 100%;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_R {
+    width: 100%;
+    height: 150px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_R .bg {
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt {
+    max-width: 750px;
+    text-align: center;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt .top_text {
+    font-size: 15px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt h2 {
+    font-size: 21px;
+    max-width: 290px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt p {
+    max-width: 265px;
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt div {
     height: 35px;
     font-size: 14px;
   }
@@ -530,6 +750,55 @@
     height: 35px;
     font-size: 14px;
   }
+  .index_consultation {
+    margin-top: 0;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_inner_side {
+    width: 100%;
+    height: 100%;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_R {
+    width: 100%;
+    max-width: 40%;
+    height: 450px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_R .bg {
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L {
+    max-width: 60%;
+    height: 450px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt {
+    max-width: 750px;
+    text-align: left;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt .top_text {
+    font-size: 15px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt h2 {
+    font-size: 21px;
+    max-width: 260px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt p {
+    max-width: 265px;
+    font-size: 14px;
+    margin-bottom: 35px;
+    margin-left: 0;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt div {
+    height: 35px;
+    font-size: 14px;
+  }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .index_top {
@@ -607,6 +876,53 @@
     margin-bottom: 45px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_R .index_services_inner_side_cnt div {
+    height: 40px;
+    font-size: 17px;
+  }
+  .index_consultation {
+    margin-top: 15px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_inner_side {
+    width: 100%;
+    height: 100%;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_R {
+    width: 100%;
+    max-width: 100%;
+    height: 270px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_R .bg {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L {
+    max-width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt {
+    max-width: 750px;
+    text-align: center;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt .top_text {
+    font-size: 23px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt h2 {
+    font-size: 27px;
+    max-width: 490px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt p {
+    max-width: 485px;
+    font-size: 17px;
+    margin-bottom: 45px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt div {
     height: 40px;
     font-size: 17px;
   }
@@ -690,6 +1006,50 @@
     height: 40px;
     font-size: 16px;
   }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_inner_side {
+    width: 100%;
+    height: 100%;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_R {
+    width: 100%;
+    max-width: 40%;
+    height: 480px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_R .bg {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L {
+    max-width: 60%;
+    height: 480px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt {
+    max-width: 380px;
+    text-align: left;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt .top_text {
+    font-size: 20px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt h2 {
+    font-size: 24px;
+    max-width: 490px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt p {
+    max-width: 485px;
+    font-size: 16px;
+    margin-bottom: 35px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt div {
+    height: 40px;
+    font-size: 16px;
+  }
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .index_top {
@@ -767,6 +1127,53 @@
     margin-bottom: 45px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_R .index_services_inner_side_cnt div {
+    height: 40px;
+    font-size: 16px;
+  }
+  .index_consultation {
+    margin-top: 0;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_inner_side {
+    width: 100%;
+    height: 100%;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_R {
+    width: 100%;
+    max-width: 40%;
+    height: 620px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_R .bg {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L {
+    max-width: 60%;
+    height: 620px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt {
+    max-width: 480px;
+    text-align: left;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt .top_text {
+    font-size: 24px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt h2 {
+    font-size: 31px;
+    max-width: 590px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt p {
+    max-width: 585px;
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt div {
     height: 40px;
     font-size: 16px;
   }
@@ -850,6 +1257,50 @@
     height: 45px;
     font-size: 17px;
   }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_inner_side {
+    width: 100%;
+    height: 100%;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_R {
+    width: 100%;
+    max-width: 40%;
+    height: 580px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_R .bg {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L {
+    max-width: 60%;
+    height: 580px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt {
+    max-width: 480px;
+    text-align: left;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt .top_text {
+    font-size: 21px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt h2 {
+    font-size: 28px;
+    max-width: 590px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt p {
+    max-width: 585px;
+    font-size: 17px;
+    margin-bottom: 45px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt div {
+    height: 45px;
+    font-size: 17px;
+  }
 }
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   .index_top {
@@ -928,6 +1379,51 @@
     margin-bottom: 55px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_R .index_services_inner_side_cnt div {
+    height: 50px;
+    font-size: 18px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_inner_side {
+    width: 100%;
+    height: 100%;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_R {
+    width: 100%;
+    max-width: 40%;
+    height: 680px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_R .bg {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L {
+    max-width: 60%;
+    height: 680px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt {
+    max-width: 630px;
+    text-align: left;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt .top_text {
+    font-size: 25px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt h2 {
+    font-size: 34px;
+    max-width: 590px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt p {
+    max-width: 595px;
+    font-size: 19px;
+    margin-bottom: 55px;
+  }
+  .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt div {
     height: 50px;
     font-size: 18px;
   }
