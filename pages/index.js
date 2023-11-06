@@ -85,11 +85,7 @@ export async function getServerSideProps() {
   }
 }
 
-export default function Home({
-  TOTAL_NUMBER_OF_IPS,
-  // PH_INDEX,
-  // PH_ICONS
-}) {
+export default function Home({ TOTAL_NUMBER_OF_IPS }) {
   const router = useRouter();
 
   // Triggering trackWebsiteVisits.js
