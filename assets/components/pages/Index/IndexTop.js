@@ -53,7 +53,7 @@ export const IndexTop = () => {
                 TriggerPageExit();
 
                 setTimeout(() => {
-                  router.push("/bio-services");
+                  router.push("/bio-services#bio");
                 }, 700);
               }}
             >
