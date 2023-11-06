@@ -8,10 +8,11 @@ import { useRouter } from "next/router";
 
 import { LazyLoadBackgroundImage } from "../../global/All/LazyLoadBackgroundImage";
 
+import TriggerPageExit from "@/assets/functions/dom/triggers/TriggerPageExit";
+
 import { INDEX_SERVICES_BG } from "@/assets/cdns/CDNBgs";
 
 import styles from "../../../styles/modules/Index/Index.module.css";
-import TriggerPageExit from "@/assets/functions/dom/triggers/TriggerPageExit";
 
 export const IndexServices = () => {
   const router = useRouter();
