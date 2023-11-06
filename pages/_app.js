@@ -331,15 +331,17 @@ function MyApp({ Component, pageProps }) {
       ':contains("&nbsp;")',
     ];
 
-    ELEMENT_TYPES.forEach((eT) => {
-      const ELEMENTS = document.getElementsByTagName(eT);
+    setTimeout(() => {
+      ELEMENT_TYPES.forEach((eT) => {
+        const ELEMENTS = document.getElementsByTagName(eT);
 
-      for (let i = 0; i < ELEMENTS.length; i++) {
-        if (!ELEMENTS[i].classList.contains("selected")) {
-          ELEMENTS[i].classList.add("selected");
+        for (let i = 0; i < ELEMENTS.length; i++) {
+          if (!ELEMENTS[i].classList.contains("selected")) {
+            ELEMENTS[i].classList.add("selected");
+          }
         }
-      }
-    });
+      });
+    }, 200);
   }, []);
 
   // useEffect(() => {
