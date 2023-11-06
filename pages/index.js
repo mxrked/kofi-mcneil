@@ -18,6 +18,12 @@ import { DesktopNav } from "@/assets/components/global/Nav/DesktopNav";
 import { MobileNav } from "@/assets/components/global/Nav/MobileNav";
 import { MobileNavMenu } from "@/assets/components/global/Nav/MobileNavMenu";
 
+import { IndexTop } from "@/assets/components/pages/Index/IndexTop";
+import { IndexServices } from "@/assets/components/pages/Index/IndexServices";
+import { IndexConsultation } from "@/assets/components/pages/Index/IndexConsultation";
+import { IndexTestimonials } from "@/assets/components/pages/Index/IndexTestimonials";
+import { IndexContact } from "@/assets/components/pages/Index/IndexContact";
+
 // Style Imports
 import "../assets/styles/modules/Index/Index.module.css";
 
@@ -127,6 +133,12 @@ export default function Home({
         <NavTop />
         <DesktopNav />
         <MobileNav />
+
+        <IndexTop />
+        <IndexServices />
+        <IndexConsultation />
+        <IndexTestimonials testimonials_data={undefined} />
+        <IndexContact />
       </div>
     </div>
   );
