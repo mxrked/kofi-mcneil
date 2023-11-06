@@ -8,6 +8,8 @@ import { useRouter } from "next/router";
 
 import { LazyLoadBackgroundImage } from "../../global/All/LazyLoadBackgroundImage";
 
+import TriggerPageExit from "@/assets/functions/dom/triggers/TriggerPageExit";
+
 import { INDEX_TOP_BG } from "@/assets/cdns/CDNBgs";
 
 import styles from "../../../styles/modules/Index/Index.module.css";
@@ -34,7 +36,7 @@ export const IndexTop = () => {
             Empowering Your IT Journey:
           </span>
           <h1 className="orientation-change-element half-second">
-            Meet Kofi Mcneil, Your Public Speaking Skills Guide
+            Meet Kofi Mcneil, Your IT Public Speaking Skills Guide.
           </h1>
 
           <p className="orientation-change-element half-second">
@@ -47,12 +49,26 @@ export const IndexTop = () => {
           <ul>
             <li
               className={`${styles.bio_services_link} orientation-change-element half-second`}
+              onClick={() => {
+                TriggerPageExit();
+
+                setTimeout(() => {
+                  router.push("/bio-services");
+                }, 700);
+              }}
             >
               <span className="half-second">Bio/Services</span>
             </li>
 
             <li
               className={`${styles.consultation_link} orientation-change-element half-second`}
+              onClick={() => {
+                TriggerPageExit();
+
+                setTimeout(() => {
+                  router.push("/contact#consultation");
+                }, 700);
+              }}
             >
               <span className="half-second">Book A Consultation</span>
             </li>
