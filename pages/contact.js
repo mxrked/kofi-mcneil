@@ -12,7 +12,7 @@ import checkLocation from "@/assets/functions/async/checkLocation";
 
 // Component Imports
 import { LoadingScreen } from "@/assets/components/global/All/LoadingScreen";
-import { PageHead } from "@/assets/components/global/All/page-heads/PageHead";
+import { PH_Contact } from "@/assets/components/global/All/page-heads/PH_Contact";
 import { NavTop } from "@/assets/components/global/Nav/NavTop";
 import { DesktopNav } from "@/assets/components/global/Nav/DesktopNav";
 import { MobileNav } from "@/assets/components/global/Nav/MobileNav";
@@ -30,8 +30,8 @@ export async function getServerSideProps() {
       return {
         props: {
           TOTAL_NUMBER_OF_IPS: 0,
-          PH_CONTACT: null,
-          PH_ICONS: null,
+          // PH_CONTACT: null,
+          // PH_ICONS: null,
         },
       };
     }
@@ -43,31 +43,31 @@ export async function getServerSideProps() {
 
     const TOTAL_NUMBER_OF_IPS = await DB.collection("ips").countDocuments();
 
-    const PH_ICONS_FILE_PATH = path.join(
-      process.cwd(),
-      "public/data/json/page-head-data/",
-      "PH_Icons.json"
-    );
-    const PH_CONTACT_FILE_PATH = path.join(
-      process.cwd(),
-      "public/data/json/page-head-data/",
-      "PH_Contact.json"
-    );
+    // const PH_ICONS_FILE_PATH = path.join(
+    //   process.cwd(),
+    //   "public/data/json/page-head-data/",
+    //   "PH_Icons.json"
+    // );
+    // const PH_CONTACT_FILE_PATH = path.join(
+    //   process.cwd(),
+    //   "public/data/json/page-head-data/",
+    //   "PH_Contact.json"
+    // );
 
-    const PH_ICONS_FILE_CONTENTS = fs.readFileSync(PH_ICONS_FILE_PATH, "utf-8");
-    const PH_CONTACT_FILE_CONTENTS = fs.readFileSync(
-      PH_CONTACT_FILE_PATH,
-      "utf-8"
-    );
+    // const PH_ICONS_FILE_CONTENTS = fs.readFileSync(PH_ICONS_FILE_PATH, "utf-8");
+    // const PH_CONTACT_FILE_CONTENTS = fs.readFileSync(
+    //   PH_CONTACT_FILE_PATH,
+    //   "utf-8"
+    // );
 
-    const PH_ICONS = JSON.parse(PH_ICONS_FILE_CONTENTS);
-    const PH_CONTACT = JSON.parse(PH_CONTACT_FILE_CONTENTS);
+    // const PH_ICONS = JSON.parse(PH_ICONS_FILE_CONTENTS);
+    // const PH_CONTACT = JSON.parse(PH_CONTACT_FILE_CONTENTS);
 
     return {
       props: {
         TOTAL_NUMBER_OF_IPS,
-        PH_CONTACT,
-        PH_ICONS,
+        // PH_CONTACT,
+        // PH_ICONS,
       },
     };
   } catch (error) {
@@ -75,14 +75,18 @@ export async function getServerSideProps() {
     return {
       props: {
         TOTAL_NUMBER_OF_IPS: 0,
-        PH_CONTACT: null,
-        PH_ICONS: null,
+        // PH_CONTACT: null,
+        // PH_ICONS: null,
       },
     };
   }
 }
 
-export default function Contact({ TOTAL_NUMBER_OF_IPS, PH_ICONS, PH_CONTACT }) {
+export default function Contact({
+  TOTAL_NUMBER_OF_IPS,
+  // PH_ICONS,
+  // PH_CONTACT
+}) {
   const router = useRouter();
 
   // Triggering trackWebsiteVisits.js
@@ -118,7 +122,7 @@ export default function Contact({ TOTAL_NUMBER_OF_IPS, PH_ICONS, PH_CONTACT }) {
 
   return (
     <div id="PAGE" className="page half-second">
-      <PageHead page_head_data={PH_CONTACT} icons_data={PH_ICONS} />
+      <PH_Contact />
       <LoadingScreen />
       <MobileNavMenu />
 
