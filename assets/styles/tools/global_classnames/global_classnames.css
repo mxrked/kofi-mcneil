@@ -6,6 +6,20 @@
   transition: 0.5s ease-in-out !important;
 }
 
+.selected::-moz-selection {
+  background-color: #256d85;
+  color: white;
+}
+
+.selected::selection {
+  background-color: #256d85;
+  color: white;
+}
+.selected::-moz-selection {
+  background-color: #256d85;
+  color: white;
+}
+
 .hidden {
   display: none !important;
 }/*# sourceMappingURL=global_classnames.css.map */
