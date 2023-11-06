@@ -14,7 +14,8 @@ export const LazyLoadBackgroundImage = ({
   style_className_PLACEHOLDER,
 }) => {
   const [SHOW_PLACEHOLDER, SET_SHOW_PLACEHOLDER] = useState(true);
-  const NOT_FOUND_URL = "PUT_NOT_FOUND_URL_HERE";
+  const NOT_FOUND_URL =
+    "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/kofi-mcneil/imgs/not_found_img.webp";
 
   const CONTAINER_REF = useRef(null);
 
