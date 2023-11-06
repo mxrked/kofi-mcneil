@@ -7,6 +7,7 @@
 import { useRouter } from "next/router";
 
 import RemoveStorageVariable from "@/assets/functions/data/storage/RemoveStorageVariable";
+import TriggerPageExit from "@/assets/functions/dom/triggers/TriggerPageExit";
 
 import styles from "../../../styles/modules/Nav/Nav.module.css";
 
@@ -92,8 +93,12 @@ export const MobileNavMenu = () => {
                     closeMobileNav();
 
                     setTimeout(() => {
-                      router.push("/");
+                      TriggerPageExit();
                     }, 1790);
+
+                    setTimeout(() => {
+                      router.push("/");
+                    }, 2000);
                   }}
                 >
                   Go Home
@@ -123,8 +128,12 @@ export const MobileNavMenu = () => {
                     closeMobileNav();
 
                     setTimeout(() => {
-                      router.push("/bio-services");
+                      TriggerPageExit();
                     }, 1790);
+
+                    setTimeout(() => {
+                      router.push("/bio-services");
+                    }, 2000);
                   }}
                 >
                   Bio/Services
@@ -154,8 +163,12 @@ export const MobileNavMenu = () => {
                     closeMobileNav();
 
                     setTimeout(() => {
-                      router.push("/contact#contact_form");
+                      TriggerPageExit();
                     }, 1790);
+
+                    setTimeout(() => {
+                      router.push("/contact#contact_form");
+                    }, 2000);
                   }}
                 >
                   Contact Me
@@ -182,8 +195,12 @@ export const MobileNavMenu = () => {
                   closeMobileNav();
 
                   setTimeout(() => {
-                    router.push("/contact#consultation");
+                    TriggerPageExit();
                   }, 1790);
+
+                  setTimeout(() => {
+                    router.push("/contact#consultation");
+                  }, 2000);
                 }}
               >
                 <span

@@ -6,6 +6,8 @@
 
 import { useRouter } from "next/router";
 
+import TriggerPageExit from "@/assets/functions/dom/triggers/TriggerPageExit";
+
 import styles from "../../../styles/modules/Nav/Nav.module.css";
 
 export const DesktopNav = () => {
@@ -25,7 +27,11 @@ export const DesktopNav = () => {
                     style={{ cursor: "pointer" }}
                     className={`${styles.logo}`}
                     onClick={() => {
-                      router.push("/");
+                      TriggerPageExit();
+
+                      setTimeout(() => {
+                        router.push("/");
+                      }, 700);
                     }}
                   >
                     <span
@@ -77,7 +83,11 @@ export const DesktopNav = () => {
                         className="orientation-change-element half-second"
                         style={{ cursor: "pointer" }}
                         onClick={() => {
-                          router.push("/");
+                          TriggerPageExit();
+
+                          setTimeout(() => {
+                            router.push("/");
+                          }, 700);
                         }}
                       >
                         Go Home
@@ -103,7 +113,11 @@ export const DesktopNav = () => {
                         className="orientation-change-element half-second"
                         style={{ cursor: "pointer" }}
                         onClick={() => {
-                          router.push("/bio-services");
+                          TriggerPageExit();
+
+                          setTimeout(() => {
+                            router.push("/bio-services");
+                          }, 700);
                         }}
                       >
                         Bio/Services
@@ -129,7 +143,11 @@ export const DesktopNav = () => {
                         className="orientation-change-element half-second"
                         style={{ cursor: "pointer" }}
                         onClick={() => {
-                          router.push("/contact#contact_form");
+                          TriggerPageExit();
+
+                          setTimeout(() => {
+                            router.push("/contact#contact_form");
+                          }, 700);
                         }}
                       >
                         Contact Me
@@ -154,7 +172,11 @@ export const DesktopNav = () => {
                       style={{ cursor: "pointer" }}
                       className={`${styles.consultation_link} orientation-change-element half-second`}
                       onClick={() => {
-                        router.push("/contact#consultation");
+                        TriggerPageExit();
+
+                        setTimeout(() => {
+                          router.push("/contact#consultation");
+                        }, 700);
                       }}
                     >
                       <span>Book A Consultant</span>

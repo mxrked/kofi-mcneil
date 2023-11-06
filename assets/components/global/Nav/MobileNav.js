@@ -7,6 +7,7 @@
 import { useRouter } from "next/router";
 
 import DeclareStorageVariable from "@/assets/functions/data/storage/DeclareStorageVariable";
+import TriggerPageExit from "@/assets/functions/dom/triggers/TriggerPageExit";
 
 import styles from "../../../styles/modules/Nav/Nav.module.css";
 
@@ -27,7 +28,11 @@ export const MobileNav = () => {
                     style={{ cursor: "pointer" }}
                     className={`${styles.logo}`}
                     onClick={() => {
-                      router.push("/");
+                      TriggerPageExit();
+
+                      setTimeout(() => {
+                        router.push("/");
+                      }, 700);
                     }}
                   >
                     <span
