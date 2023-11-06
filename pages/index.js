@@ -12,7 +12,7 @@ import checkLocation from "@/assets/functions/async/checkLocation";
 
 // Component Imports
 import { LoadingScreen } from "@/assets/components/global/All/LoadingScreen";
-import { PageHead } from "@/assets/components/global/All/PageHead";
+import { PH_Index } from "@/assets/components/global/All/page-heads/PH_Index";
 import { NavTop } from "@/assets/components/global/Nav/NavTop";
 import { DesktopNav } from "@/assets/components/global/Nav/DesktopNav";
 import { MobileNav } from "@/assets/components/global/Nav/MobileNav";
@@ -30,8 +30,8 @@ export async function getServerSideProps() {
       return {
         props: {
           TOTAL_NUMBER_OF_IPS: 0,
-          PH_INDEX: null,
-          PH_ICONS: null,
+          // PH_INDEX: null,
+          // PH_ICONS: null,
         },
       };
     }
@@ -43,28 +43,28 @@ export async function getServerSideProps() {
 
     const TOTAL_NUMBER_OF_IPS = await DB.collection("ips").countDocuments();
 
-    const PH_ICONS_FILE_PATH = path.join(
-      process.cwd(),
-      "public/data/json/page-head-data/",
-      "PH_Icons.json"
-    );
-    const PH_INDEX_FILE_PATH = path.join(
-      process.cwd(),
-      "public/data/json/page-head-data/",
-      "PH_Index.json"
-    );
+    // const PH_ICONS_FILE_PATH = path.join(
+    //   process.cwd(),
+    //   "public/data/json/page-head-data/",
+    //   "PH_Icons.json"
+    // );
+    // const PH_INDEX_FILE_PATH = path.join(
+    //   process.cwd(),
+    //   "public/data/json/page-head-data/",
+    //   "PH_Index.json"
+    // );
 
-    const PH_ICONS_FILE_CONTENTS = fs.readFileSync(PH_ICONS_FILE_PATH, "utf-8");
-    const PH_INDEX_FILE_CONTENTS = fs.readFileSync(PH_INDEX_FILE_PATH, "utf-8");
+    // const PH_ICONS_FILE_CONTENTS = fs.readFileSync(PH_ICONS_FILE_PATH, "utf-8");
+    // const PH_INDEX_FILE_CONTENTS = fs.readFileSync(PH_INDEX_FILE_PATH, "utf-8");
 
-    const PH_ICONS = JSON.parse(PH_ICONS_FILE_CONTENTS);
-    const PH_INDEX = JSON.parse(PH_INDEX_FILE_CONTENTS);
+    // const PH_ICONS = JSON.parse(PH_ICONS_FILE_CONTENTS);
+    // const PH_INDEX = JSON.parse(PH_INDEX_FILE_CONTENTS);
 
     return {
       props: {
         TOTAL_NUMBER_OF_IPS,
-        PH_INDEX,
-        PH_ICONS,
+        // PH_INDEX,
+        // PH_ICONS,
       },
     };
   } catch (error) {
@@ -72,14 +72,18 @@ export async function getServerSideProps() {
     return {
       props: {
         TOTAL_NUMBER_OF_IPS: 0,
-        PH_INDEX: null,
-        PH_ICONS: null,
+        // PH_INDEX: null,
+        // PH_ICONS: null,
       },
     };
   }
 }
 
-export default function Home({ TOTAL_NUMBER_OF_IPS, PH_ICONS, PH_INDEX }) {
+export default function Home({
+  TOTAL_NUMBER_OF_IPS,
+  // PH_INDEX,
+  // PH_ICONS
+}) {
   const router = useRouter();
 
   // Triggering trackWebsiteVisits.js
@@ -115,7 +119,7 @@ export default function Home({ TOTAL_NUMBER_OF_IPS, PH_ICONS, PH_INDEX }) {
 
   return (
     <div id="PAGE" className="page half-second">
-      <PageHead page_head_data={PH_INDEX} icons_data={PH_ICONS} />
+      <PH_Index />
       <LoadingScreen />
       <MobileNavMenu />
 

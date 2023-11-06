@@ -12,7 +12,7 @@ import checkLocation from "@/assets/functions/async/checkLocation";
 
 // Component Imports
 import { LoadingScreen } from "@/assets/components/global/All/LoadingScreen";
-import { PageHead } from "@/assets/components/global/All/PageHead";
+import { PageHead } from "@/assets/components/global/All/page-heads/PageHead";
 import { NavTop } from "@/assets/components/global/Nav/NavTop";
 import { DesktopNav } from "@/assets/components/global/Nav/DesktopNav";
 import { MobileNav } from "@/assets/components/global/Nav/MobileNav";

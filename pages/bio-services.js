@@ -12,7 +12,7 @@ import checkLocation from "@/assets/functions/async/checkLocation";
 
 // Component Imports
 import { LoadingScreen } from "@/assets/components/global/All/LoadingScreen";
-import { PageHead } from "@/assets/components/global/All/PageHead";
+import { PH_BioServices } from "@/assets/components/global/All/page-heads/PH_BioServices";
 import { NavTop } from "@/assets/components/global/Nav/NavTop";
 import { DesktopNav } from "@/assets/components/global/Nav/DesktopNav";
 import { MobileNav } from "@/assets/components/global/Nav/MobileNav";
@@ -30,8 +30,8 @@ export async function getServerSideProps() {
       return {
         props: {
           TOTAL_NUMBER_OF_IPS: 0,
-          PH_BIOSERVICES: null,
-          PH_ICONS: null,
+          // PH_BIOSERVICES: null,
+          // PH_ICONS: null,
         },
       };
     }
@@ -43,31 +43,31 @@ export async function getServerSideProps() {
 
     const TOTAL_NUMBER_OF_IPS = await DB.collection("ips").countDocuments();
 
-    const PH_ICONS_FILE_PATH = path.join(
-      process.cwd(),
-      "public/data/json/page-head-data/",
-      "PH_Icons.json"
-    );
-    const PH_BIO_SERVICES_FILE_PATH = path.join(
-      process.cwd(),
-      "public/data/json/page-head-data/",
-      "PH_BioServices.json"
-    );
+    // const PH_ICONS_FILE_PATH = path.join(
+    //   process.cwd(),
+    //   "public/data/json/page-head-data/",
+    //   "PH_Icons.json"
+    // );
+    // const PH_BIO_SERVICES_FILE_PATH = path.join(
+    //   process.cwd(),
+    //   "public/data/json/page-head-data/",
+    //   "PH_BioServices.json"
+    // );
 
-    const PH_ICONS_FILE_CONTENTS = fs.readFileSync(PH_ICONS_FILE_PATH, "utf-8");
-    const PH_BIO_SERVICES_FILE_CONTENTS = fs.readFileSync(
-      PH_BIO_SERVICES_FILE_PATH,
-      "utf-8"
-    );
+    // const PH_ICONS_FILE_CONTENTS = fs.readFileSync(PH_ICONS_FILE_PATH, "utf-8");
+    // const PH_BIO_SERVICES_FILE_CONTENTS = fs.readFileSync(
+    //   PH_BIO_SERVICES_FILE_PATH,
+    //   "utf-8"
+    // );
 
-    const PH_ICONS = JSON.parse(PH_ICONS_FILE_CONTENTS);
-    const PH_BIOSERVICES = JSON.parse(PH_BIO_SERVICES_FILE_CONTENTS);
+    // const PH_ICONS = JSON.parse(PH_ICONS_FILE_CONTENTS);
+    // const PH_BIOSERVICES = JSON.parse(PH_BIO_SERVICES_FILE_CONTENTS);
 
     return {
       props: {
         TOTAL_NUMBER_OF_IPS,
-        PH_BIOSERVICES,
-        PH_ICONS,
+        // PH_BIOSERVICES,
+        // PH_ICONS,
       },
     };
   } catch (error) {
@@ -75,8 +75,8 @@ export async function getServerSideProps() {
     return {
       props: {
         TOTAL_NUMBER_OF_IPS: 0,
-        PH_BIOSERVICES: null,
-        PH_ICONS: null,
+        // PH_BIOSERVICES: null,
+        // PH_ICONS: null,
       },
     };
   }
@@ -84,8 +84,8 @@ export async function getServerSideProps() {
 
 export default function BioServices({
   TOTAL_NUMBER_OF_IPS,
-  PH_ICONS,
-  PH_BIOSERVICES,
+  // PH_ICONS,
+  // PH_BIOSERVICES,
 }) {
   const router = useRouter();
 
@@ -122,7 +122,7 @@ export default function BioServices({
 
   return (
     <div id="PAGE" className="page half-second">
-      <PageHead page_head_data={PH_BIOSERVICES} icons_data={PH_ICONS} />
+      <PH_BioServices />
       <LoadingScreen />
       <MobileNavMenu />
 
