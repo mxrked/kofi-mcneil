@@ -17,6 +17,7 @@ import { NavTop } from "@/assets/components/global/Nav/NavTop";
 import { DesktopNav } from "@/assets/components/global/Nav/DesktopNav";
 import { MobileNav } from "@/assets/components/global/Nav/MobileNav";
 import { MobileNavMenu } from "@/assets/components/global/Nav/MobileNavMenu";
+import { Footer } from "@/assets/components/global/Footer/Footer";
 
 // Style Imports
 // import "../assets/styles/modules/Contact/Contact.module.css";
@@ -130,6 +131,8 @@ export default function Contact({
         <NavTop />
         <DesktopNav />
         <MobileNav />
+
+        <Footer />
       </div>
     </div>
   );

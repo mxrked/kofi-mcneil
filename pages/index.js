@@ -17,6 +17,7 @@ import { NavTop } from "@/assets/components/global/Nav/NavTop";
 import { DesktopNav } from "@/assets/components/global/Nav/DesktopNav";
 import { MobileNav } from "@/assets/components/global/Nav/MobileNav";
 import { MobileNavMenu } from "@/assets/components/global/Nav/MobileNavMenu";
+import { Footer } from "@/assets/components/global/Footer/Footer";
 
 import { IndexTop } from "@/assets/components/pages/Index/IndexTop";
 import { IndexServices } from "@/assets/components/pages/Index/IndexServices";
@@ -145,6 +146,8 @@ export default function Home({ TOTAL_NUMBER_OF_IPS, TESTIMONIALS_DATA }) {
         {/**   */}
         <IndexTestimonials testimonials_data={TESTIMONIALS_DATA} />
         <IndexContact />
+
+        <Footer />
       </div>
     </div>
   );
