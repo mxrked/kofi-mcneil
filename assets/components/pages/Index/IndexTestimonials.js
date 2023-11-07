@@ -48,51 +48,55 @@ export const IndexTestimonials = ({ testimonials_data }) => {
             <div className={`${styles.index_testimonials_inner_main_row} row`}>
               {testimonials_data.map((item, index) => (
                 <div
-                  key={item.testimonialID}
-                  className={`${styles.testimonial} ${getColumnClasses(
+                  className={`${styles.testimonial_holder} ${getColumnClasses(
                     index,
                     testimonials_data.length
                   )}`}
                 >
-                  <div className={`${styles.testimonial_inner}`}>
-                    <div className={`${styles.testimonial_inner_cnt}`}>
-                      <div
-                        className={`${styles.img_holder} orientation-change-element half-second`}
-                      >
-                        <LazyLoadImage
-                          src={item.testimonialImg}
-                          alt={`Soft Skill IT Communications: Image of ${item.testimonialName}.`}
-                          title={`Soft Skill IT Communications: Image of ${item.testimonialName}.`}
-                        />
-                      </div>
-
-                      <div className={`${styles.testimonial_details_holder}`}>
-                        <span
-                          className={`${styles.testimonial_name} orientation-change-element half-second`}
+                  <div
+                    key={item.testimonialID}
+                    className={`${styles.testimonial}`}
+                  >
+                    <div className={`${styles.testimonial_inner}`}>
+                      <div className={`${styles.testimonial_inner_cnt}`}>
+                        <div
+                          className={`${styles.img_holder} orientation-change-element half-second`}
                         >
-                          {item.testimonialName}
-                        </span>
-                        <span
-                          className={`${styles.testimonial_date} orientation-change-element half-second`}
-                        >
-                          {item.testimonialDate}
-                        </span>
+                          <LazyLoadImage
+                            src={item.testimonialImg}
+                            alt={`Soft Skill IT Communications: Image of ${item.testimonialName}.`}
+                            title={`Soft Skill IT Communications: Image of ${item.testimonialName}.`}
+                          />
+                        </div>
 
-                        <p className="orientation-change-element half-second">
-                          " {item.testimonialText} "
-                        </p>
+                        <div className={`${styles.testimonial_details_holder}`}>
+                          <span
+                            className={`${styles.testimonial_name} orientation-change-element half-second`}
+                          >
+                            {item.testimonialName}
+                          </span>
+                          <span
+                            className={`${styles.testimonial_date} orientation-change-element half-second`}
+                          >
+                            {item.testimonialDate}
+                          </span>
+
+                          <p className="orientation-change-element half-second">
+                            " {item.testimonialText} "
+                          </p>
+                        </div>
+
+                        <ul>
+                          {Array.from(
+                            { length: item.testimonialRating },
+                            (_, index) => (
+                              <li key={index}>
+                                <BsStarFill />
+                              </li>
+                            )
+                          )}
+                        </ul>
                       </div>
-
-                      <ul>
-                        {Array.from(
-                          { length: item.testimonialRating },
-                          (_, index) => (
-                            <li key={index}>
-                              <BsStarFill />
-                            </li>
-                          )
-                        )}
-                      </ul>
                     </div>
                   </div>
                 </div>
