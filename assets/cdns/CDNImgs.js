@@ -20,6 +20,9 @@ const PROGRAMMER_DEVELOPER_IMG = CDNImgReturn(
 const RED_BLUE_TEAM_IMG = CDNImgReturn("bio-services", "red-blue-team", "webp");
 const SOC_ANALYST_IMG = CDNImgReturn("bio-services", "soc-analyst", "webp");
 
+const SELF_IMG_1 = CDNImgReturn("bio-services", "self-img-1", "webp");
+const SELF_IMG_2 = CDNImgReturn("bio-services", "self-img-2", "webp");
+
 const CONTACT_FORM_IMG = CDNImgReturn("contact", "contact-form-img", "webp");
 
 export {
@@ -29,4 +32,5 @@ export {
   RED_BLUE_TEAM_IMG,
   SOC_ANALYST_IMG,
 };
+export { SELF_IMG_1, SELF_IMG_2 };
 export { CONTACT_FORM_IMG };
