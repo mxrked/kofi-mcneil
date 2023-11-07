@@ -800,7 +800,7 @@
     font-size: 15px;
   }
   .index_consultation {
-    margin-top: 60px;
+    margin-top: 20px;
   }
   .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_inner_side {
     width: 100%;
@@ -842,10 +842,10 @@
     font-size: 15px;
   }
   .index_testimonials {
-    margin-top: 70px;
+    margin-top: 10px;
     margin-bottom: 100px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .index_testimonials .index_testimonials_inner .index_testimonials_inner_top {
     margin-bottom: 60px;
@@ -889,12 +889,12 @@
     max-width: 150px;
   }
   .index_contact {
-    margin-top: 150px;
+    margin-top: 90px;
     margin-bottom: 100px;
   }
   .index_contact .index_contact_inner .index_contact_inner_img {
-    max-width: 400px;
-    height: 250px;
+    max-width: 340px;
+    height: 240px;
   }
   .index_contact .index_contact_inner .index_contact_inner_text {
     max-width: 750px;
@@ -1096,11 +1096,11 @@
   }
   .index_contact {
     margin-top: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
   }
   .index_contact .index_contact_inner .index_contact_inner_img {
-    max-width: 260px;
-    height: 180px;
+    max-width: 240px;
+    height: 150px;
   }
   .index_contact .index_contact_inner .index_contact_inner_text {
     max-width: 750px;
@@ -1308,7 +1308,7 @@
   }
   .index_contact {
     margin-top: 30px;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
   }
   .index_contact .index_contact_inner .index_contact_inner_img {
     max-width: 340px;
@@ -1515,7 +1515,7 @@
   }
   .index_contact {
     margin-top: 130px;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
   }
   .index_contact .index_contact_inner .index_contact_inner_img {
     max-width: 450px;
@@ -1719,7 +1719,7 @@
   }
   .index_contact {
     margin-top: 80px;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
   }
   .index_contact .index_contact_inner .index_contact_inner_img {
     max-width: 350px;
@@ -1926,7 +1926,7 @@
   }
   .index_contact {
     margin-top: 150px;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
   }
   .index_contact .index_contact_inner .index_contact_inner_img {
     max-width: 550px;
@@ -2130,7 +2130,7 @@
   }
   .index_contact {
     margin-top: 120px;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
   }
   .index_contact .index_contact_inner .index_contact_inner_img {
     max-width: 480px;
@@ -2336,7 +2336,7 @@
   }
   .index_contact {
     margin-top: 140px;
-    margin-bottom: 70px;
+    margin-bottom: 120px;
   }
   .index_contact .index_contact_inner .index_contact_inner_img {
     max-width: 580px;
