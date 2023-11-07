@@ -61,8 +61,8 @@ export const IndexTestimonials = ({ testimonials_data }) => {
                       >
                         <LazyLoadImage
                           src={item.testimonialImg}
-                          alt={`Image of ${item.testimonialName}.`}
-                          title={`Image of ${item.testimonialName}.`}
+                          alt={`Soft Skill IT Communications: Image of ${item.testimonialName}.`}
+                          title={`Soft Skill IT Communications: Image of ${item.testimonialName}.`}
                         />
                       </div>
 
