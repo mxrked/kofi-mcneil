@@ -348,8 +348,7 @@
 
       .index_testimonials_inner_main_box {
         .index_testimonials_inner_main_row {
-          .testimonial {
-            height: 100%;
+          .testimonial_holder {
             margin-bottom: 30px;
 
             &:nth-last-child(2) {
@@ -359,10 +358,38 @@
             &:last-child {
               margin-bottom: 0;
             }
+          }
+
+          .testimonial {
+            // height: 350px;
+            // min-height: 250px;
+            // max-height: 350px;
+            height: 400px;
+            width: 100%;
+            // margin-bottom: 30px;
+            overflow: hidden;
+            overflow-y: auto;
+            white-space: nowrap;
+            position: relative;
+            display: block;
+            scrollbar-color: rgba(197, 197, 197, 0.63) $JellyBean;
+            scrollbar-width: thin;
+            border: 2px solid rgba(0, 0, 0, 0.053);
+            background-color: white;
+
+            &::-webkit-scrollbar {
+              width: 8px;
+              background-color: rgba(197, 197, 197, 0.63);
+            }
+
+            /* Custom styling for the scrollbar handle */
+            &::-webkit-scrollbar-thumb {
+              background-color: $JellyBean;
+            }
 
             .testimonial_inner {
               background-color: white;
-              height: 450px;
+              min-height: 400px;
               width: 100%;
               max-width: 98%;
               @include quickCenter("relative");
@@ -371,13 +398,20 @@
               white-space: nowrap;
               @include displayElement(flex, center, center);
               border-radius: 10px;
-              border: 1px solid rgba(128, 128, 128, 0.121);
+              // border: 1px solid rgba(128, 128, 128, 0.121);
+              position: relative;
 
               .testimonial_inner_cnt {
                 white-space: normal;
                 word-wrap: break-word;
                 overflow-wrap: break-word;
                 text-align: center;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                // height: 100%;
+                // width: 100%;
+                // padding-top: 40px;
+                // padding-bottom: 40px;
 
                 .img_holder {
                   max-width: 70px;
@@ -825,13 +859,15 @@
 
         .index_testimonials_inner_main_box {
           .index_testimonials_inner_main_row {
-            .testimonial {
-              max-width: 100%;
-              width: 100%;
-
+            .testimonial_holder {
               &:nth-last-child(2) {
                 margin-bottom: 30px;
               }
+            }
+
+            .testimonial {
+              max-width: 100%;
+              width: 100%;
             }
           }
         }
@@ -1057,17 +1093,22 @@
 
         .index_testimonials_inner_main_box {
           .index_testimonials_inner_main_row {
+            .testimonial_holder {
+              &:nth-last-child(2) {
+                margin-bottom: 15px;
+              }
+            }
+
             .testimonial {
               padding: 0;
               max-width: 100%;
               width: 100%;
-              margin-bottom: 15px;
-
-              &:nth-last-child(2) {
-                margin-bottom: 15px;
-              }
+              // margin-bottom: 15px;
+              height: 350px;
 
               .testimonial_inner {
+                min-height: 350px;
+
                 .testimonial_inner_cnt {
                   .img_holder {
                     max-width: 55px;
@@ -1331,18 +1372,23 @@
 
         .index_testimonials_inner_main_box {
           .index_testimonials_inner_main_row {
-            .testimonial {
-              padding: 0;
-              max-width: 100%;
-              width: 100%;
+            .testimonial_holder {
               margin-bottom: 10px;
 
               &:nth-last-child(2) {
                 margin-bottom: 10px;
               }
+            }
+
+            .testimonial {
+              padding: 0;
+              max-width: 100%;
+              width: 100%;
+              height: 350px;
+              // margin-bottom: 10px;
 
               .testimonial_inner {
-                height: 400px;
+                min-height: 350px;
 
                 .testimonial_inner_cnt {
                   .img_holder {
@@ -1620,18 +1666,23 @@
 
         .index_testimonials_inner_main_box {
           .index_testimonials_inner_main_row {
-            .testimonial {
-              padding: 0;
-              max-width: 50%;
-              width: 100%;
+            .testimonial_holder {
               margin-bottom: 10px;
+              max-width: 50%;
 
               &:nth-last-child(2) {
                 margin-bottom: 0px;
               }
+            }
+
+            .testimonial {
+              padding: 0;
+              height: 300px;
+              width: 100%;
+              // margin-bottom: 10px;
 
               .testimonial_inner {
-                height: 400px;
+                min-height: 350px;
 
                 .testimonial_inner_cnt {
                   .img_holder {
@@ -1906,18 +1957,23 @@
 
         .index_testimonials_inner_main_box {
           .index_testimonials_inner_main_row {
-            .testimonial {
-              padding: 0;
+            .testimonial_holder {
               max-width: 50%;
-              width: 100%;
               margin-bottom: 10px;
 
               &:nth-last-child(2) {
                 margin-bottom: 0px;
               }
+            }
+
+            .testimonial {
+              padding: 0;
+              width: 100%;
+              height: 350px;
+              // margin-bottom: 10px;
 
               .testimonial_inner {
-                height: 400px;
+                min-height: 350px;
 
                 .testimonial_inner_cnt {
                   .img_holder {
@@ -2187,18 +2243,23 @@
 
         .index_testimonials_inner_main_box {
           .index_testimonials_inner_main_row {
-            .testimonial {
-              padding: 0;
+            .testimonial_holder {
               max-width: 50%;
-              width: 100%;
               margin-bottom: 10px;
 
               &:nth-last-child(2) {
                 margin-bottom: 0px;
               }
+            }
+
+            .testimonial {
+              padding: 0;
+              width: 100%;
+              height: 350px;
+              // margin-bottom: 10px;
 
               .testimonial_inner {
-                height: 400px;
+                min-height: 350px;
 
                 .testimonial_inner_cnt {
                   .img_holder {
@@ -2471,18 +2532,23 @@
 
         .index_testimonials_inner_main_box {
           .index_testimonials_inner_main_row {
-            .testimonial {
-              padding: 0;
+            .testimonial_holder {
               max-width: 50%;
-              width: 100%;
               margin-bottom: 10px;
 
               &:nth-last-child(2) {
                 margin-bottom: 0px;
               }
+            }
+
+            .testimonial {
+              padding: 0;
+              width: 100%;
+              height: 350px;
+              // margin-bottom: 10px;
 
               .testimonial_inner {
-                height: 460px;
+                min-height: 350px;
 
                 .testimonial_inner_cnt {
                   .img_holder {
@@ -2752,18 +2818,22 @@
 
         .index_testimonials_inner_main_box {
           .index_testimonials_inner_main_row {
-            .testimonial {
-              padding: 0;
-              max-width: 50%;
-              width: 100%;
+            .testimonial_holder {
               margin-bottom: 10px;
+              max-width: 50%;
 
               &:nth-last-child(2) {
                 margin-bottom: 0px;
               }
+            }
+
+            .testimonial {
+              padding: 0;
+              width: 100%;
+              height: 300px;
 
               .testimonial_inner {
-                height: 460px;
+                min-height: 300px;
 
                 .testimonial_inner_cnt {
                   .img_holder {
@@ -3037,18 +3107,22 @@
 
         .index_testimonials_inner_main_box {
           .index_testimonials_inner_main_row {
-            .testimonial {
-              padding: 0;
+            .testimonial_holder {
               max-width: 50%;
-              width: 100%;
               margin-bottom: 10px;
 
               &:nth-last-child(2) {
                 margin-bottom: 0px;
               }
+            }
+
+            .testimonial {
+              padding: 0;
+              width: 100%;
+              height: 300px;
 
               .testimonial_inner {
-                height: 460px;
+                min-height: 300px;
 
                 .testimonial_inner_cnt {
                   .img_holder {
