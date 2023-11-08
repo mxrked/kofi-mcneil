@@ -82,6 +82,97 @@
   margin-right: auto;
 }
 
+.bio_services_bio {
+  margin-top: 120px;
+  margin-bottom: 140px;
+}
+.bio_services_bio .bio_services_bio_inner {
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_img_holder {
+  max-width: 500px;
+  height: 500px;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 115px;
+  border: 2px solid rgba(172, 172, 172, 0.062);
+}
+.bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_img_holder img {
+  max-width: 100%;
+}
+.bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text {
+  max-width: 870px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text .top_text {
+  font-family: "Lato Bold";
+  font-size: clamp(1.44rem, 2vw + 1.25rem, 2.15rem);
+  color: #040d12;
+  opacity: 0.7;
+}
+.bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text h2 {
+  font-family: "Lato Black";
+  font-size: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+  color: #040d12;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text em {
+  font-family: "Lato Regular";
+  font-size: clamp(1rem, 0.54vw + 1rem, 1.33rem);
+  color: #040d12;
+  margin-bottom: 50px;
+  display: block;
+  font-style: italic;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text p {
+  font-family: "Lato Regular";
+  font-size: clamp(1rem, 0.54vw + 1rem, 1.33rem);
+  color: #040d12;
+  margin-bottom: 30px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_number,
+.bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_name {
+  font-family: "Lato Bold";
+  font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+}
+.bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_number {
+  margin-right: 10px;
+}
+.bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li p {
+  font-size: clamp(0.8rem, 0.24vw + 0.81rem, 1.04rem);
+  margin-top: 15px;
+  display: block;
+}
+
 @media all and (max-width: 1995px) {
   .bio_services_top {
     height: 510px;
@@ -97,6 +188,29 @@
     max-width: 720px;
   }
   .bio_services_top .bio_services_top_overlay .bio_services_top_overlay_cnt p {
+    font-size: 20px;
+  }
+  .bio_services_bio {
+    margin-top: 90px;
+    margin-bottom: 100px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_img_holder {
+    max-width: 450px;
+    height: 450px;
+    margin-bottom: 85px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text {
+    max-width: 750px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text .top_text {
+    font-size: 25px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text h2 {
+    font-size: 42px;
+    max-width: 720px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text em,
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text p {
     font-size: 20px;
   }
 }
@@ -125,6 +239,37 @@
     height: 40px;
     font-size: 17px;
   }
+  .bio_services_bio {
+    margin-top: 70px;
+    margin-bottom: 80px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_img_holder {
+    max-width: 400px;
+    height: 400px;
+    margin-bottom: 65px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text {
+    max-width: 750px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text .top_text {
+    font-size: 23px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text h2 {
+    font-size: 37px;
+    max-width: 620px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text em,
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text p {
+    max-width: 600px;
+    font-size: 17px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_name,
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_number {
+    font-size: 17px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li p {
+    font-size: 16px;
+  }
 }
 @media all and (max-width: 768px) {
   .bio_services_top {
@@ -143,6 +288,39 @@
   .bio_services_top .bio_services_top_overlay .bio_services_top_overlay_cnt p {
     max-width: 400px;
     font-size: 15px;
+  }
+  .bio_services_bio {
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_img_holder {
+    max-width: 300px;
+    height: 300px;
+    margin-bottom: 65px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text {
+    max-width: 750px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text .top_text {
+    font-size: 20px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text h2 {
+    font-size: 27px;
+    max-width: 360px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text em,
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text p {
+    max-width: 400px;
+    font-size: 15px;
+    margin-bottom: 35px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_name,
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_number {
+    font-size: 14px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li p {
+    font-size: 14px;
+    margin-top: 10px;
   }
 }
 @media all and (max-width: 419px) {
@@ -165,6 +343,41 @@
     max-width: 265px;
     font-size: 14px;
   }
+  .bio_services_bio {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_img_holder {
+    max-width: 230px;
+    height: 230px;
+    margin-bottom: 45px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text {
+    max-width: 750px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text .top_text {
+    font-size: 15px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text h2 {
+    font-size: 21px;
+    max-width: 290px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text em,
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text p {
+    max-width: 265px;
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_name,
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_number {
+    font-size: 13px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li p {
+    font-size: 13px;
+    margin-top: 10px;
+  }
 }
 @media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .bio_services_top {
@@ -185,6 +398,41 @@
   .bio_services_top .bio_services_top_overlay .bio_services_top_overlay_cnt p {
     max-width: 385px;
     font-size: 15px;
+  }
+  .bio_services_bio {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_img_holder {
+    max-width: 230px;
+    height: 230px;
+    margin-bottom: 45px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text {
+    max-width: 750px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text .top_text {
+    font-size: 15px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text h2 {
+    font-size: 21px;
+    max-width: 260px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text em,
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text p {
+    max-width: 365px;
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_name,
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_number {
+    font-size: 14px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li p {
+    font-size: 14px;
+    margin-top: 10px;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
@@ -207,6 +455,41 @@
     max-width: 545px;
     font-size: 17px;
   }
+  .bio_services_bio {
+    margin-top: 70px;
+    margin-bottom: 80px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_img_holder {
+    max-width: 320px;
+    height: 320px;
+    margin-bottom: 45px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text {
+    max-width: 750px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text .top_text {
+    font-size: 23px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text h2 {
+    font-size: 27px;
+    max-width: 490px;
+    margin-top: 10px;
+    margin-bottom: 45px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text em,
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text p {
+    max-width: 545px;
+    font-size: 17px;
+    margin-bottom: 35px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_name,
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_number {
+    font-size: 16px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li p {
+    font-size: 15px;
+    margin-top: 10px;
+  }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .bio_services_top {
@@ -227,6 +510,41 @@
   .bio_services_top .bio_services_top_overlay .bio_services_top_overlay_cnt p {
     max-width: 525px;
     font-size: 16px;
+  }
+  .bio_services_bio {
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_img_holder {
+    max-width: 320px;
+    height: 320px;
+    margin-bottom: 45px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text {
+    max-width: 750px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text .top_text {
+    font-size: 20px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text h2 {
+    font-size: 24px;
+    max-width: 490px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text em,
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text p {
+    max-width: 525px;
+    font-size: 16px;
+    margin-bottom: 35px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_name,
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_number {
+    font-size: 15px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li p {
+    font-size: 14px;
+    margin-top: 10px;
   }
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -249,6 +567,41 @@
     max-width: 585px;
     font-size: 18px;
   }
+  .bio_services_bio {
+    margin-top: 100px;
+    margin-bottom: 110px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_img_holder {
+    max-width: 440px;
+    height: 440px;
+    margin-bottom: 45px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text {
+    max-width: 750px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text .top_text {
+    font-size: 24px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text h2 {
+    font-size: 31px;
+    max-width: 590px;
+    margin-top: 10px;
+    margin-bottom: 55px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text em,
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text p {
+    max-width: 585px;
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_name,
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_number {
+    font-size: 17px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li p {
+    font-size: 17px;
+    margin-top: 10px;
+  }
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .bio_services_top {
@@ -270,6 +623,41 @@
     max-width: 535px;
     font-size: 17px;
   }
+  .bio_services_bio {
+    margin-top: 80px;
+    margin-bottom: 90px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_img_holder {
+    max-width: 390px;
+    height: 390px;
+    margin-bottom: 45px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text {
+    max-width: 750px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text .top_text {
+    font-size: 21px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text h2 {
+    font-size: 28px;
+    max-width: 590px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text em,
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text p {
+    max-width: 585px;
+    font-size: 17px;
+    margin-bottom: 45px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_name,
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_number {
+    font-size: 17px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li p {
+    font-size: 17px;
+    margin-top: 10px;
+  }
 }
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   .bio_services_top {
@@ -290,5 +678,40 @@
   .bio_services_top .bio_services_top_overlay .bio_services_top_overlay_cnt p {
     max-width: 615px;
     font-size: 19px;
+  }
+  .bio_services_bio {
+    margin-top: 110px;
+    margin-bottom: 120px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_img_holder {
+    max-width: 420px;
+    height: 420px;
+    margin-bottom: 65px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text {
+    max-width: 750px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text .top_text {
+    font-size: 25px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text h2 {
+    font-size: 34px;
+    max-width: 590px;
+    margin-top: 10px;
+    margin-bottom: 55px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text em,
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text p {
+    max-width: 705px;
+    font-size: 19px;
+    margin-bottom: 45px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_name,
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_number {
+    font-size: 18px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li p {
+    font-size: 18px;
+    margin-top: 10px;
   }
 }/*# sourceMappingURL=BioServices.module.css.map */

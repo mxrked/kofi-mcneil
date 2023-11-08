@@ -90,6 +90,107 @@
     }
   }
 }
+.bio_services_bio {
+  margin-top: 120px;
+  margin-bottom: 140px;
+
+  .bio_services_bio_inner {
+    max-width: 1450px;
+    @include quickCenter("relative");
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    .bio_services_bio_inner_img_holder {
+      max-width: 500px;
+      height: 500px;
+      overflow: hidden;
+      white-space: nowrap;
+      @include quickCenter("relative");
+      margin-bottom: 115px;
+      border: 2px solid rgba(172, 172, 172, 0.062);
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .bio_services_bio_inner_text {
+      max-width: 870px;
+      @include quickCenter("relative");
+
+      .top_text {
+        font-family: "Lato Bold";
+        font-size: $Logo;
+        color: $BlackPearl;
+        opacity: 0.7;
+      }
+
+      h2 {
+        font-family: "Lato Black";
+        font-size: $SubHeading;
+        color: $BlackPearl;
+        @include quickCenter("relative");
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+
+      em {
+        font-family: "Lato Regular";
+        font-size: $SmallText;
+        // opacity: 0.7;
+        color: $BlackPearl;
+        margin-bottom: 50px;
+        display: block;
+        font-style: italic;
+        // max-width: 800px;
+        width: 100%;
+        @include quickCenter("relative");
+      }
+
+      p {
+        font-family: "Lato Regular";
+        font-size: $SmallText;
+        color: $BlackPearl;
+        margin-bottom: 30px;
+        // max-width: 800px;
+        width: 100%;
+        @include quickCenter("relative");
+      }
+
+      ol {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        // list-style: none;
+
+        li {
+          .skill_number_and_name {
+            @include displayElement(flex, center, center);
+
+            .skill_number,
+            .skill_name {
+              font-family: "Lato Bold";
+              font-size: $Link;
+            }
+
+            .skill_number {
+              margin-right: 10px;
+            }
+          }
+
+          p {
+            font-size: $SmallLink;
+            margin-top: 15px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
 
 // Responsive
 @media all and (max-width: 1995px) {
@@ -109,6 +210,37 @@
           max-width: 720px;
         }
 
+        p {
+          font-size: clamp(20px, 20px, 20px);
+        }
+      }
+    }
+  }
+  .bio_services_bio {
+    margin-top: 90px;
+    margin-bottom: 100px;
+
+    .bio_services_bio_inner {
+      .bio_services_bio_inner_img_holder {
+        max-width: 450px;
+        height: 450px;
+        margin-bottom: 85px;
+      }
+
+      .bio_services_bio_inner_text {
+        max-width: 750px;
+
+        .top_text {
+          font-size: clamp(23px, 25px, 25px);
+        }
+
+        h2 {
+          font-size: clamp(42px, 42px, 42px);
+          max-width: 720px;
+          // margin-left: 0;
+        }
+
+        em,
         p {
           font-size: clamp(20px, 20px, 20px);
         }
@@ -150,6 +282,52 @@
       }
     }
   }
+  .bio_services_bio {
+    margin-top: 70px;
+    margin-bottom: 80px;
+
+    .bio_services_bio_inner {
+      .bio_services_bio_inner_img_holder {
+        max-width: 400px;
+        height: 400px;
+        margin-bottom: 65px;
+      }
+
+      .bio_services_bio_inner_text {
+        max-width: 750px;
+
+        .top_text {
+          font-size: clamp(21px, 23px, 23px);
+        }
+
+        h2 {
+          font-size: clamp(36px, 37px, 37px);
+          max-width: 620px;
+        }
+
+        em,
+        p {
+          max-width: 600px;
+          font-size: clamp(17px, 17px, 17px);
+        }
+
+        ol {
+          li {
+            .skill_number_and_name {
+              .skill_name,
+              .skill_number {
+                font-size: clamp(17px, 17px, 17px);
+              }
+            }
+
+            p {
+              font-size: clamp(15px, 16px, 16px);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
@@ -177,6 +355,54 @@
           max-width: 400px;
           font-size: clamp(15px, 15px, 15px);
           // margin-bottom: 35px;
+        }
+      }
+    }
+  }
+  .bio_services_bio {
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+    .bio_services_bio_inner {
+      .bio_services_bio_inner_img_holder {
+        max-width: 300px;
+        height: 300px;
+        margin-bottom: 65px;
+      }
+
+      .bio_services_bio_inner_text {
+        max-width: 750px;
+
+        .top_text {
+          font-size: clamp(18px, 20px, 20px);
+        }
+
+        h2 {
+          font-size: clamp(27px, 27px, 27px);
+          max-width: 360px;
+        }
+
+        em,
+        p {
+          max-width: 400px;
+          font-size: clamp(15px, 15px, 15px);
+          margin-bottom: 35px;
+        }
+
+        ol {
+          li {
+            .skill_number_and_name {
+              .skill_name,
+              .skill_number {
+                font-size: clamp(14px, 14px, 14px);
+              }
+            }
+
+            p {
+              font-size: clamp(13px, 14px, 14px);
+              margin-top: 10px;
+            }
+          }
         }
       }
     }
@@ -211,6 +437,56 @@
       }
     }
   }
+  .bio_services_bio {
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+    .bio_services_bio_inner {
+      .bio_services_bio_inner_img_holder {
+        max-width: 230px;
+        height: 230px;
+        margin-bottom: 45px;
+      }
+
+      .bio_services_bio_inner_text {
+        max-width: 750px;
+
+        .top_text {
+          font-size: clamp(15px, 15px, 15px);
+        }
+
+        h2 {
+          font-size: clamp(21px, 21px, 21px);
+          max-width: 290px;
+          margin-top: 10px;
+          margin-bottom: 15px;
+        }
+
+        em,
+        p {
+          max-width: 265px;
+          font-size: clamp(14px, 14px, 14px);
+          margin-bottom: 35px;
+        }
+
+        ol {
+          li {
+            .skill_number_and_name {
+              .skill_name,
+              .skill_number {
+                font-size: clamp(13px, 13px, 13px);
+              }
+            }
+
+            p {
+              font-size: clamp(12px, 13px, 13px);
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Pixel 2 XL
@@ -237,6 +513,58 @@
           max-width: 385px;
           font-size: clamp(15px, 15px, 15px);
           // margin-bottom: 35px;
+        }
+      }
+    }
+  }
+  .bio_services_bio {
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+    .bio_services_bio_inner {
+      .bio_services_bio_inner_img_holder {
+        max-width: 230px;
+        height: 230px;
+        margin-bottom: 45px;
+      }
+
+      .bio_services_bio_inner_text {
+        max-width: 750px;
+
+        .top_text {
+          font-size: clamp(15px, 15px, 15px);
+        }
+
+        h2 {
+          font-size: clamp(21px, 21px, 21px);
+          max-width: 260px;
+          margin-top: 10px;
+          margin-bottom: 25px;
+          // margin-left: 0;
+        }
+
+        em,
+        p {
+          max-width: 365px;
+          font-size: clamp(14px, 14px, 14px);
+          margin-bottom: 35px;
+          // margin-left: 0;
+        }
+
+        ol {
+          li {
+            .skill_number_and_name {
+              .skill_name,
+              .skill_number {
+                font-size: clamp(14px, 14px, 14px);
+              }
+            }
+
+            p {
+              font-size: clamp(13px, 14px, 14px);
+              margin-top: 10px;
+            }
+          }
         }
       }
     }
@@ -271,6 +599,56 @@
       }
     }
   }
+  .bio_services_bio {
+    margin-top: 70px;
+    margin-bottom: 80px;
+
+    .bio_services_bio_inner {
+      .bio_services_bio_inner_img_holder {
+        max-width: 320px;
+        height: 320px;
+        margin-bottom: 45px;
+      }
+
+      .bio_services_bio_inner_text {
+        max-width: 750px;
+
+        .top_text {
+          font-size: clamp(23px, 23px, 23px);
+        }
+
+        h2 {
+          font-size: clamp(27px, 27px, 27px);
+          max-width: 490px;
+          margin-top: 10px;
+          margin-bottom: 45px;
+        }
+
+        em,
+        p {
+          max-width: 545px;
+          font-size: clamp(17px, 17px, 17px);
+          margin-bottom: 35px;
+        }
+
+        ol {
+          li {
+            .skill_number_and_name {
+              .skill_name,
+              .skill_number {
+                font-size: clamp(16px, 16px, 16px);
+              }
+            }
+
+            p {
+              font-size: clamp(14px, 15px, 15px);
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
@@ -296,6 +674,56 @@
           max-width: 525px;
           font-size: clamp(16px, 16px, 16px);
           // margin-bottom: 35px;
+        }
+      }
+    }
+  }
+  .bio_services_bio {
+    margin-top: 50px;
+    margin-bottom: 60px;
+
+    .bio_services_bio_inner {
+      .bio_services_bio_inner_img_holder {
+        max-width: 320px;
+        height: 320px;
+        margin-bottom: 45px;
+      }
+
+      .bio_services_bio_inner_text {
+        max-width: 750px;
+
+        .top_text {
+          font-size: clamp(20px, 20px, 20px);
+        }
+
+        h2 {
+          font-size: clamp(24px, 24px, 24px);
+          max-width: 490px;
+          margin-top: 10px;
+          margin-bottom: 25px;
+        }
+
+        em,
+        p {
+          max-width: 525px;
+          font-size: clamp(16px, 16px, 16px);
+          margin-bottom: 35px;
+        }
+
+        ol {
+          li {
+            .skill_number_and_name {
+              .skill_name,
+              .skill_number {
+                font-size: clamp(15px, 15px, 15px);
+              }
+            }
+
+            p {
+              font-size: clamp(13px, 14px, 14px);
+              margin-top: 10px;
+            }
+          }
         }
       }
     }
@@ -330,6 +758,56 @@
       }
     }
   }
+  .bio_services_bio {
+    margin-top: 100px;
+    margin-bottom: 110px;
+
+    .bio_services_bio_inner {
+      .bio_services_bio_inner_img_holder {
+        max-width: 440px;
+        height: 440px;
+        margin-bottom: 45px;
+      }
+
+      .bio_services_bio_inner_text {
+        max-width: 750px;
+
+        .top_text {
+          font-size: clamp(24px, 24px, 24px);
+        }
+
+        h2 {
+          font-size: clamp(31px, 31px, 31px);
+          max-width: 590px;
+          margin-top: 10px;
+          margin-bottom: 55px;
+        }
+
+        em,
+        p {
+          max-width: 585px;
+          font-size: clamp(18px, 18px, 18px);
+          margin-bottom: 45px;
+        }
+
+        ol {
+          li {
+            .skill_number_and_name {
+              .skill_name,
+              .skill_number {
+                font-size: clamp(17px, 17px, 17px);
+              }
+            }
+
+            p {
+              font-size: clamp(16px, 17px, 17px);
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
@@ -355,6 +833,56 @@
           max-width: 535px;
           font-size: clamp(17px, 17px, 17px);
           // margin-bottom: 45px;
+        }
+      }
+    }
+  }
+  .bio_services_bio {
+    margin-top: 80px;
+    margin-bottom: 90px;
+
+    .bio_services_bio_inner {
+      .bio_services_bio_inner_img_holder {
+        max-width: 390px;
+        height: 390px;
+        margin-bottom: 45px;
+      }
+
+      .bio_services_bio_inner_text {
+        max-width: 750px;
+
+        .top_text {
+          font-size: clamp(21px, 21px, 21px);
+        }
+
+        h2 {
+          font-size: clamp(28px, 28px, 28px);
+          max-width: 590px;
+          margin-top: 10px;
+          margin-bottom: 25px;
+        }
+
+        em,
+        p {
+          max-width: 585px;
+          font-size: clamp(17px, 17px, 17px);
+          margin-bottom: 45px;
+        }
+
+        ol {
+          li {
+            .skill_number_and_name {
+              .skill_name,
+              .skill_number {
+                font-size: clamp(17px, 17px, 17px);
+              }
+            }
+
+            p {
+              font-size: clamp(16px, 17px, 17px);
+              margin-top: 10px;
+            }
+          }
         }
       }
     }
@@ -385,6 +913,57 @@
           max-width: 615px;
           font-size: clamp(19px, 19px, 19px);
           // margin-bottom: 55px;
+        }
+      }
+    }
+  }
+  .bio_services_bio {
+    margin-top: 110px;
+    margin-bottom: 120px;
+
+    .bio_services_bio_inner {
+      .bio_services_bio_inner_img_holder {
+        max-width: 420px;
+        height: 420px;
+        margin-bottom: 65px;
+      }
+
+      .bio_services_bio_inner_text {
+        max-width: 750px;
+
+        .top_text {
+          font-size: clamp(25px, 25px, 25px);
+        }
+
+        h2 {
+          font-size: clamp(34px, 34px, 34px);
+          max-width: 590px;
+          margin-top: 10px;
+          margin-bottom: 55px;
+          // margin-left: 0;
+        }
+
+        em,
+        p {
+          max-width: 705px;
+          font-size: clamp(19px, 19px, 19px);
+          margin-bottom: 45px;
+        }
+
+        ol {
+          li {
+            .skill_number_and_name {
+              .skill_name,
+              .skill_number {
+                font-size: clamp(18px, 18px, 18px);
+              }
+            }
+
+            p {
+              font-size: clamp(17px, 18px, 18px);
+              margin-top: 10px;
+            }
+          }
         }
       }
     }
