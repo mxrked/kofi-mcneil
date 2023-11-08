@@ -1,0 +1,82 @@
+[
+  {
+    "serviceID": "S_1",
+    "serviceName": "Programmer/Developers",
+    "serviceImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/kofi-mcneil/imgs/bio-services/programmer-developer.webp",
+    "serviceImgAlt": "Soft Skill IT Communications: Man working working on program/developing project.",
+    "serviceText": "Kofi Mcneil's expertise uniquely equips him to enhance the public speaking skills of programmers and developers. With a deep understanding of the technical realm and exceptional communication skills, Kofi offers tailored guidance, empowering individuals to convey complex concepts effectively in their field.",
+    "serviceSoftSkills": [
+      "Empathy",
+      "Communication",
+      "Teamwork",
+      "Approachability",
+      "Patience",
+      "Open-mindedness",
+      "Problem-solving",
+      "Creativity"
+    ],
+    "serviceCitation": "https://hackernoon.com/10-soft-skills-every-developer-needs-66f0cdcfd3f7",
+    "serviceConsultationHash": "programmers_developers"
+  },
+  {
+    "serviceID": "S_2",
+    "serviceName": "Penetration Testers",
+    "serviceImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/kofi-mcneil/imgs/bio-services/penetration-tester.webp",
+    "serviceImgAlt": "Soft Skill IT Communications: Black and green text-based monitor doing penetration testing.",
+    "serviceText": "Kofi Mcneil is uniquely equipped to aid penetration testers in improving their public speaking skills. With his deep knowledge of cybersecurity and strong communication abilities, he provides tailored guidance to help these professionals effectively communicate their insights and strategies to diverse audiences.",
+    "serviceSoftSkills": [
+      "Communication",
+      "Public Speaking",
+      "Explaining technical subjects",
+      "Organization",
+      "Time Management",
+      "Problem-solving",
+      "Critical thinking",
+      "Self-awareness"
+    ],
+    "serviceCitation": "https://www.dice.com/career-advice/pen-tester-growing-opportunities-for-a-cybersecurity-career-path",
+    "serviceConsultationHash": "penetration_testers"
+  },
+  {
+    "serviceID": "S_3",
+    "serviceName": "Red Teams/Blue Teams",
+    "serviceImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/kofi-mcneil/imgs/bio-services/red-blue-team.webp",
+    "serviceImgAlt": "Soft Skill IT Communications: Person holding red and blue shield with lock as the symbol.",
+    "serviceText": "Kofi Mcneil is well-suited to assist both Red and Blue teams in enhancing their public speaking skills. With his expertise in cybersecurity and strong communication abilities, he provides tailored guidance to help professionals on both sides effectively present their findings and strategies.",
+    "serviceSoftSkills": [
+      "Problem-solving",
+      "Adaptability",
+      "Critical thinking",
+      "Communication",
+      "Teamwork",
+      "Attention to Detail",
+      "Stress Management"
+    ],
+    "serviceCitation": "N/A",
+    "serviceConsultationHash": "red_blue_teams"
+  },
+  {
+    "serviceID": "S_4",
+    "serviceName": "SOC Analysts",
+    "serviceImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/kofi-mcneil/imgs/bio-services/soc-analyst.webp",
+    "serviceImgAlt": "Soft Skill IT Communications: Man working at desk doing SOC work.",
+    "serviceText": "Kofi Mcneil is a valuable resource for SOC analysts seeking to improve their public speaking skills. With his deep knowledge of cybersecurity and strong communication abilities, he provides tailored guidance to help these professionals effectively convey their insights and findings.",
+    "serviceSoftSkills": [
+      "Problem-solving",
+      "Organizational skill",
+      "Critical thinking"
+    ],
+    "serviceCitation": "https://www.springboard.com/blog/cybersecurity/soc-analyst-guide/",
+    "serviceConsultationHash": "soc_analysts"
+  },
+  {
+    "serviceID": "S_5",
+    "serviceName": "CISO Officers",
+    "serviceImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/kofi-mcneil/imgs/bio-services/ciso-officer.webp",
+    "serviceImgAlt": "Soft Skill IT Communications: Female CISO Officer talking infront of group of people.",
+    "serviceText": "Kofi Mcneil is an excellent resource for CISO officers aiming to enhance their public speaking skills. With deep expertise in cybersecurity and strong communication abilities, he offers customized guidance to help these high-level professionals effectively convey their strategic insights and cybersecurity initiatives.",
+    "serviceSoftSkills": ["Integrity", "Communication", "Courtesy", "Teamwork"],
+    "serviceCitation": "https://scholarworks.lib.csusb.edu/cgi/viewcontent.cgi?article=1522&context=jitim#:~:text=As%20expected%2C%20the%20top%20two%20skills%20are%20communication%20and%20leadership.",
+    "serviceConsultationHash": "ciso_officers"
+  }
+]
