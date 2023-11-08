@@ -35,8 +35,7 @@ export const IndexConsultation = () => {
                 </span>
 
                 <h2 className="orientation-change-element half-second">
-                  Master IT Public Speaking with Kofi Mcneil: Expert IT
-                  Consultant.
+                  Master IT Public Speaking with Kofi Mcneil: IT Consultant.
                 </h2>
 
                 <p className="orientation-change-element half-second">
