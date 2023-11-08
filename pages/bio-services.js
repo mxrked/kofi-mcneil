@@ -18,20 +18,38 @@ import { DesktopNav } from "@/assets/components/global/Nav/DesktopNav";
 import { MobileNav } from "@/assets/components/global/Nav/MobileNav";
 import { MobileNavMenu } from "@/assets/components/global/Nav/MobileNavMenu";
 import { Footer } from "@/assets/components/global/Footer/Footer";
+
 import { BioServicesTop } from "@/assets/components/pages/BioServices/BioServicesTop";
+import { BioServicesBio } from "@/assets/components/pages/BioServices/BioServicesBio";
 
 // Style Imports
 // import "../assets/styles/modules/BioServices/BioServices.module.css";
 
 export async function getServerSideProps() {
+  const BIO_SERVICES_MISSION_VISION_FILE_PATH = path.join(
+    process.cwd(),
+    "public/data/json/bio-services/",
+    "Mission_Vision.json"
+  );
+  const BIO_SERVICES_MISSION_VISION_FILE_CONTENTS = fs.readFileSync(
+    BIO_SERVICES_MISSION_VISION_FILE_PATH,
+    "utf-8"
+  );
+  let BIO_SERVICES_MISSION_VISION_DATA = undefined;
+
   // Connecting to DB
   try {
     const DB = await connectDatabase();
+
+    BIO_SERVICES_MISSION_VISION_DATA = JSON.parse(
+      BIO_SERVICES_MISSION_VISION_FILE_CONTENTS
+    );
 
     if (!DB) {
       return {
         props: {
           TOTAL_NUMBER_OF_IPS: 0,
+          BIO_SERVICES_MISSION_VISION_DATA,
           // PH_BIOSERVICES: null,
           // PH_ICONS: null,
         },
@@ -45,6 +63,9 @@ export async function getServerSideProps() {
 
     const TOTAL_NUMBER_OF_IPS = await DB.collection("ips").countDocuments();
 
+    BIO_SERVICES_MISSION_VISION_DATA = JSON.parse(
+      BIO_SERVICES_MISSION_VISION_FILE_CONTENTS
+    );
     // const PH_ICONS_FILE_PATH = path.join(
     //   process.cwd(),
     //   "public/data/json/page-head-data/",
@@ -68,6 +89,7 @@ export async function getServerSideProps() {
     return {
       props: {
         TOTAL_NUMBER_OF_IPS,
+        BIO_SERVICES_MISSION_VISION_DATA,
         // PH_BIOSERVICES,
         // PH_ICONS,
       },
@@ -77,6 +99,7 @@ export async function getServerSideProps() {
     return {
       props: {
         TOTAL_NUMBER_OF_IPS: 0,
+        BIO_SERVICES_MISSION_VISION_DATA,
         // PH_BIOSERVICES: null,
         // PH_ICONS: null,
       },
@@ -86,6 +109,7 @@ export async function getServerSideProps() {
 
 export default function BioServices({
   TOTAL_NUMBER_OF_IPS,
+  BIO_SERVICES_MISSION_VISION_DATA,
   // PH_ICONS,
   // PH_BIOSERVICES,
 }) {
@@ -122,6 +146,21 @@ export default function BioServices({
     }
   }, []);
 
+  // Jumping to anchor points if hash is found
+  useEffect(() => {
+    if (document.getElementById("bioAnchorPoint")) {
+      if (router.asPath.indexOf("#bio") > -1) {
+        document.getElementById("bioAnchorPoint").scrollIntoView();
+      }
+    }
+
+    if (document.getElementById("servicesAnchorPoint")) {
+      if (router.asPath.indexOf("#services") > -1) {
+        document.getElementById("servicesAnchorPoint").scrollIntoView();
+      }
+    }
+  }, []);
+
   return (
     <div id="PAGE" className="page half-second">
       <PH_BioServices />
@@ -134,6 +173,7 @@ export default function BioServices({
         <MobileNav />
 
         <BioServicesTop />
+        <BioServicesBio />
 
         <Footer />
       </div>
