@@ -22,6 +22,7 @@ import { Footer } from "@/assets/components/global/Footer/Footer";
 import { BioServicesTop } from "@/assets/components/pages/BioServices/BioServicesTop";
 import { BioServicesBio } from "@/assets/components/pages/BioServices/BioServicesBio";
 import { BioServicesMissionVision } from "@/assets/components/pages/BioServices/BioServicesMissionVision";
+import { BioServicesServices } from "@/assets/components/pages/BioServices/BioServicesServices";
 
 // Style Imports
 // import "../assets/styles/modules/BioServices/BioServices.module.css";
@@ -32,11 +33,23 @@ export async function getServerSideProps() {
     "public/data/json/bio-services/",
     "Mission_Vision.json"
   );
+  const BIO_SERVICES_SERVICES_FILE_PATH = path.join(
+    process.cwd(),
+    "public/data/json/bio-services/",
+    "Services.json"
+  );
+
   const BIO_SERVICES_MISSION_VISION_FILE_CONTENTS = fs.readFileSync(
     BIO_SERVICES_MISSION_VISION_FILE_PATH,
     "utf-8"
   );
+  const BIO_SERVICES_SERVICES_FILE_CONTENTS = fs.readFileSync(
+    BIO_SERVICES_SERVICES_FILE_PATH,
+    "utf-8"
+  );
+
   let BIO_SERVICES_MISSION_VISION_DATA = undefined;
+  let BIO_SERVICES_SERVICES_DATA = undefined;
 
   // Connecting to DB
   try {
@@ -45,12 +58,16 @@ export async function getServerSideProps() {
     BIO_SERVICES_MISSION_VISION_DATA = JSON.parse(
       BIO_SERVICES_MISSION_VISION_FILE_CONTENTS
     );
+    BIO_SERVICES_SERVICES_DATA = JSON.parse(
+      BIO_SERVICES_SERVICES_FILE_CONTENTS
+    );
 
     if (!DB) {
       return {
         props: {
           TOTAL_NUMBER_OF_IPS: 0,
           BIO_SERVICES_MISSION_VISION_DATA,
+          BIO_SERVICES_SERVICES_DATA,
           // PH_BIOSERVICES: null,
           // PH_ICONS: null,
         },
@@ -66,6 +83,9 @@ export async function getServerSideProps() {
 
     BIO_SERVICES_MISSION_VISION_DATA = JSON.parse(
       BIO_SERVICES_MISSION_VISION_FILE_CONTENTS
+    );
+    BIO_SERVICES_SERVICES_DATA = JSON.parse(
+      BIO_SERVICES_SERVICES_FILE_CONTENTS
     );
     // const PH_ICONS_FILE_PATH = path.join(
     //   process.cwd(),
@@ -91,6 +111,7 @@ export async function getServerSideProps() {
       props: {
         TOTAL_NUMBER_OF_IPS,
         BIO_SERVICES_MISSION_VISION_DATA,
+        BIO_SERVICES_SERVICES_DATA,
         // PH_BIOSERVICES,
         // PH_ICONS,
       },
@@ -101,6 +122,7 @@ export async function getServerSideProps() {
       props: {
         TOTAL_NUMBER_OF_IPS: 0,
         BIO_SERVICES_MISSION_VISION_DATA,
+        BIO_SERVICES_SERVICES_DATA,
         // PH_BIOSERVICES: null,
         // PH_ICONS: null,
       },
@@ -111,6 +133,7 @@ export async function getServerSideProps() {
 export default function BioServices({
   TOTAL_NUMBER_OF_IPS,
   BIO_SERVICES_MISSION_VISION_DATA,
+  BIO_SERVICES_SERVICES_DATA,
   // PH_ICONS,
   // PH_BIOSERVICES,
 }) {
@@ -177,6 +200,9 @@ export default function BioServices({
         <BioServicesBio />
         <BioServicesMissionVision
           mission_vision_data={BIO_SERVICES_MISSION_VISION_DATA}
+        />
+        <BioServicesServices
+          bio_services_services_data={BIO_SERVICES_SERVICES_DATA}
         />
 
         <Footer />
