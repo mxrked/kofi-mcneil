@@ -63,7 +63,7 @@ export const BioServicesBio = () => {
       softSkillID: "SS_8",
       softSkillNumber: 8,
       softSkillName: "Attention to Detail",
-      softSkillText: "Ensuring accuracy in coding and documentation.",
+      softSkillText: "Ensuring accuracy in documentation.",
     },
     {
       softSkillID: "SS_9",
