@@ -23,7 +23,7 @@
     "serviceName": "Penetration Testers",
     "serviceImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/kofi-mcneil/imgs/bio-services/penetration-tester.webp",
     "serviceImgAlt": "Soft Skill IT Communications: Black and green text-based monitor doing penetration testing.",
-    "serviceText": "Kofi Mcneil is uniquely equipped to aid penetration testers in improving their public speaking skills. With his deep knowledge of cybersecurity and strong communication abilities, he provides tailored guidance to help these professionals effectively communicate their insights and strategies to diverse audiences.",
+    "serviceText": "Kofi Mcneil is uniquely equipped to aid penetration testers in improving their public speaking skills. With his deep strong communication abilities, he provides tailored guidance to help these professionals effectively communicate their insights and strategies to diverse audiences.",
     "serviceSoftSkills": [
       "Communication",
       "Public Speaking",
@@ -42,7 +42,7 @@
     "serviceName": "Red Teams/Blue Teams",
     "serviceImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/kofi-mcneil/imgs/bio-services/red-blue-team.webp",
     "serviceImgAlt": "Soft Skill IT Communications: Person holding red and blue shield with lock as the symbol.",
-    "serviceText": "Kofi Mcneil is well-suited to assist both Red and Blue teams in enhancing their public speaking skills. With his expertise in cybersecurity and strong communication abilities, he provides tailored guidance to help professionals on both sides effectively present their findings and strategies.",
+    "serviceText": "Kofi Mcneil is well-suited to assist both Red and Blue teams in enhancing their public speaking skills. With his expertise and strong communication abilities, he provides tailored guidance to help professionals on both sides effectively present their findings and strategies.",
     "serviceSoftSkills": [
       "Problem-solving",
       "Adaptability",
@@ -60,7 +60,7 @@
     "serviceName": "SOC Analysts",
     "serviceImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/kofi-mcneil/imgs/bio-services/soc-analyst.webp",
     "serviceImgAlt": "Soft Skill IT Communications: Man working at desk doing SOC work.",
-    "serviceText": "Kofi Mcneil is a valuable resource for SOC analysts seeking to improve their public speaking skills. With his deep knowledge of cybersecurity and strong communication abilities, he provides tailored guidance to help these professionals effectively convey their insights and findings.",
+    "serviceText": "Kofi Mcneil is a valuable resource for SOC analysts seeking to improve their public speaking skills. With his strong communication abilities, he provides tailored guidance to help these professionals effectively convey their insights and findings.",
     "serviceSoftSkills": [
       "Problem-solving",
       "Organizational skill",
@@ -74,7 +74,7 @@
     "serviceName": "CISO Officers",
     "serviceImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/kofi-mcneil/imgs/bio-services/ciso-officer.webp",
     "serviceImgAlt": "Soft Skill IT Communications: Female CISO Officer talking infront of group of people.",
-    "serviceText": "Kofi Mcneil is an excellent resource for CISO officers aiming to enhance their public speaking skills. With deep expertise in cybersecurity and strong communication abilities, he offers customized guidance to help these high-level professionals effectively convey their strategic insights and cybersecurity initiatives.",
+    "serviceText": "Kofi Mcneil is an excellent resource for CISO officers aiming to enhance their public speaking skills. With strong communication abilities, he offers customized guidance to help these high-level professionals effectively convey their strategic insights and cybersecurity initiatives.",
     "serviceSoftSkills": ["Integrity", "Communication", "Courtesy", "Teamwork"],
     "serviceCitation": "https://scholarworks.lib.csusb.edu/cgi/viewcontent.cgi?article=1522&context=jitim#:~:text=As%20expected%2C%20the%20top%20two%20skills%20are%20communication%20and%20leadership.",
     "serviceConsultationHash": "ciso_officers"
