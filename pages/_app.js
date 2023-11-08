@@ -158,6 +158,7 @@ function MyApp({ Component, pageProps }) {
       const SS_VARIABLES = [
         "Modal Opened",
         // "FM Loaded",
+        "Mobile Nav Opened",
         "Page Reload",
         "Submission Sent",
         "ph_foZTeM1AW8dh5WkaofxTYiInBhS4XzTzRqLs50kVziw_posthog",
