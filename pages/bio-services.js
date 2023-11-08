@@ -21,6 +21,7 @@ import { Footer } from "@/assets/components/global/Footer/Footer";
 
 import { BioServicesTop } from "@/assets/components/pages/BioServices/BioServicesTop";
 import { BioServicesBio } from "@/assets/components/pages/BioServices/BioServicesBio";
+import { BioServicesMissionVision } from "@/assets/components/pages/BioServices/BioServicesMissionVision";
 
 // Style Imports
 // import "../assets/styles/modules/BioServices/BioServices.module.css";
@@ -174,6 +175,9 @@ export default function BioServices({
 
         <BioServicesTop />
         <BioServicesBio />
+        <BioServicesMissionVision
+          mission_vision_data={BIO_SERVICES_MISSION_VISION_DATA}
+        />
 
         <Footer />
       </div>
