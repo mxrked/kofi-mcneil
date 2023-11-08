@@ -18,6 +18,7 @@ import { DesktopNav } from "@/assets/components/global/Nav/DesktopNav";
 import { MobileNav } from "@/assets/components/global/Nav/MobileNav";
 import { MobileNavMenu } from "@/assets/components/global/Nav/MobileNavMenu";
 import { Footer } from "@/assets/components/global/Footer/Footer";
+import { BioServicesTop } from "@/assets/components/pages/BioServices/BioServicesTop";
 
 // Style Imports
 // import "../assets/styles/modules/BioServices/BioServices.module.css";
@@ -131,6 +132,8 @@ export default function BioServices({
         <NavTop />
         <DesktopNav />
         <MobileNav />
+
+        <BioServicesTop />
 
         <Footer />
       </div>
