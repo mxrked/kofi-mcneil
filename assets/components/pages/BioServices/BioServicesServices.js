@@ -30,6 +30,7 @@ export const BioServicesServices = ({ bio_services_services_data }) => {
       id="bioServicesServices"
       className={`${styles.bio_services_services}`}
     >
+      <div id="servicesAnchorPoint" />
       <div className={`${styles.bio_services_services_inner}`}>
         <div className={`${styles.bio_services_services_inner_top}`}>
           <div
