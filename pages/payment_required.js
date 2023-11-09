@@ -45,9 +45,14 @@ export default function PaymentRequired() {
           402: Payment is required. Contact your web developer to fix this
           issue.{" "}
           <strong style={{ fontWeight: "bold" }}>
-            codingthefront@gmail.com
+            <a href="mailTo:codingthefront@gmail.com">
+              codingthefront@gmail.com
+            </a>
           </strong>{" "}
-          OR <strong style={{ fontWeight: "bold" }}>(336) 831-3432</strong>
+          OR{" "}
+          <strong style={{ fontWeight: "bold" }}>
+            <a href="tel:+13368313432">(336) 831-3432</a>
+          </strong>
         </span>
         <br />
         <br />
