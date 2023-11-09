@@ -102,11 +102,11 @@
   border-radius: 3px;
   cursor: pointer;
 }
-.index_top .index_top_overlay .index_top_overlay_cnt ul .index_link {
+.index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link {
   background-color: white;
   color: #040d12;
 }
-.index_top .index_top_overlay .index_top_overlay_cnt ul .index_link:hover {
+.index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link:hover {
   background-color: rgb(197, 197, 197);
 }
 .index_top .index_top_overlay .index_top_overlay_cnt ul .consultation_link {
@@ -848,7 +848,7 @@
     display: inline-flex;
     font-size: 15px;
   }
-  .index_top .index_top_overlay .index_top_overlay_cnt ul .index_link {
+  .index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link {
     margin-bottom: 12px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
@@ -1062,7 +1062,7 @@
     display: inline-flex;
     font-size: 14px;
   }
-  .index_top .index_top_overlay .index_top_overlay_cnt ul .index_link {
+  .index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link {
     margin-bottom: 12px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
@@ -1292,7 +1292,7 @@
     display: inline-flex;
     font-size: 15px;
   }
-  .index_top .index_top_overlay .index_top_overlay_cnt ul .index_link {
+  .index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link {
     margin-bottom: 0;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
@@ -1527,7 +1527,7 @@
     display: inline-flex;
     font-size: 17px;
   }
-  .index_top .index_top_overlay .index_top_overlay_cnt ul .index_link {
+  .index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link {
     margin-bottom: 0;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
@@ -1758,7 +1758,7 @@
     display: inline-flex;
     font-size: 16px;
   }
-  .index_top .index_top_overlay .index_top_overlay_cnt ul .index_link {
+  .index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link {
     margin-bottom: 0;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
@@ -1986,7 +1986,7 @@
     display: inline-flex;
     font-size: 18px;
   }
-  .index_top .index_top_overlay .index_top_overlay_cnt ul .index_link {
+  .index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link {
     margin-bottom: 0;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
@@ -2217,7 +2217,7 @@
     display: inline-flex;
     font-size: 17px;
   }
-  .index_top .index_top_overlay .index_top_overlay_cnt ul .index_link {
+  .index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link {
     margin-bottom: 0;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
@@ -2445,7 +2445,7 @@
     display: inline-flex;
     font-size: 18px;
   }
-  .index_top .index_top_overlay .index_top_overlay_cnt ul .index_link {
+  .index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link {
     margin-bottom: 0;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
