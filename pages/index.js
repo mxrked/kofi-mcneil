@@ -22,6 +22,7 @@ import { Footer } from "@/assets/components/global/Footer/Footer";
 import { IndexTop } from "@/assets/components/pages/Index/IndexTop";
 import { IndexServices } from "@/assets/components/pages/Index/IndexServices";
 import { IndexConsultation } from "@/assets/components/pages/Index/IndexConsultation";
+import { IndexMissionVision } from "@/assets/components/pages/Index/IndexMissionVision";
 import { IndexTestimonials } from "@/assets/components/pages/Index/IndexTestimonials";
 import { IndexContact } from "@/assets/components/pages/Index/IndexContact";
 
@@ -34,11 +35,22 @@ export async function getServerSideProps() {
     "public/data/json/testimonials-data/",
     "Testimonials.json"
   );
+  const BIO_SERVICES_MISSION_VISION_FILE_PATH = path.join(
+    process.cwd(),
+    "public/data/json/bio-services/",
+    "Mission_Vision.json"
+  );
 
+  const BIO_SERVICES_MISSION_VISION_FILE_CONTENTS = fs.readFileSync(
+    BIO_SERVICES_MISSION_VISION_FILE_PATH,
+    "utf-8"
+  );
   const TESTIMONIALS_DATA_FILE_CONTENTS = fs.readFileSync(
     TESTIMONIALS_DATA_FILE_PATH,
     "utf-8"
   );
+
+  let BIO_SERVICES_MISSION_VISION_DATA = undefined;
   let TESTIMONIALS_DATA = undefined;
 
   // Connecting to DB
@@ -46,6 +58,9 @@ export async function getServerSideProps() {
     const DB = await connectDatabase();
 
     TESTIMONIALS_DATA = JSON.parse(TESTIMONIALS_DATA_FILE_CONTENTS);
+    BIO_SERVICES_MISSION_VISION_DATA = JSON.parse(
+      BIO_SERVICES_MISSION_VISION_FILE_CONTENTS
+    );
 
     if (!DB) {
       console.log("NO DATA!");
@@ -54,6 +69,7 @@ export async function getServerSideProps() {
         props: {
           TOTAL_NUMBER_OF_IPS: 0,
           TESTIMONIALS_DATA,
+          BIO_SERVICES_MISSION_VISION_DATA,
         },
       };
     }
@@ -66,11 +82,15 @@ export async function getServerSideProps() {
     const TOTAL_NUMBER_OF_IPS = await DB.collection("ips").countDocuments();
 
     TESTIMONIALS_DATA = JSON.parse(TESTIMONIALS_DATA_FILE_CONTENTS);
+    BIO_SERVICES_MISSION_VISION_DATA = JSON.parse(
+      BIO_SERVICES_MISSION_VISION_FILE_CONTENTS
+    );
 
     return {
       props: {
         TOTAL_NUMBER_OF_IPS,
         TESTIMONIALS_DATA,
+        BIO_SERVICES_MISSION_VISION_DATA,
       },
     };
   } catch (error) {
@@ -79,13 +99,18 @@ export async function getServerSideProps() {
     return {
       props: {
         TOTAL_NUMBER_OF_IPS: 0,
-        TESTIMONIALS_DATA: null,
+        TESTIMONIALS_DATA,
+        BIO_SERVICES_MISSION_VISION_DATA,
       },
     };
   }
 }
 
-export default function Home({ TOTAL_NUMBER_OF_IPS, TESTIMONIALS_DATA }) {
+export default function Home({
+  TOTAL_NUMBER_OF_IPS,
+  TESTIMONIALS_DATA,
+  BIO_SERVICES_MISSION_VISION_DATA,
+}) {
   const router = useRouter();
 
   // Triggering trackWebsiteVisits.js
@@ -143,6 +168,9 @@ export default function Home({ TOTAL_NUMBER_OF_IPS, TESTIMONIALS_DATA }) {
         <IndexTop />
         <IndexServices />
         <IndexConsultation />
+        <IndexMissionVision
+          mission_vision_data={BIO_SERVICES_MISSION_VISION_DATA}
+        />
         {/**   */}
         <IndexTestimonials testimonials_data={TESTIMONIALS_DATA} />
         <IndexContact />
