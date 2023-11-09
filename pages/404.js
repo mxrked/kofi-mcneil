@@ -197,9 +197,9 @@ export default function NotFound() {
             </h1>
 
             <p className="orientation-change-element half-second">
-              Uh Oh! The page you are looking for does not exist. If you are
+              {`Uh Oh! The page you are looking for does not exist. If you are
               expecting a page to be here, please contact you website's
-              developer:{" "}
+              developer:`}{" "}
               <strong style={{ fontWeight: "bold" }}>
                 <a href="mailTo:codingthefront@gmail.com">
                   codingthefront@gmail.com
