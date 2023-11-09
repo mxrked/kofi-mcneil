@@ -20,6 +20,7 @@ import { MobileNavMenu } from "@/assets/components/global/Nav/MobileNavMenu";
 import { Footer } from "@/assets/components/global/Footer/Footer";
 
 import { ContactTop } from "@/assets/components/pages/Contact/ContactTop";
+import { ContactConsultation } from "@/assets/components/pages/Contact/ContactConsultation";
 
 // Style Imports
 // import "../assets/styles/modules/Contact/Contact.module.css";
@@ -123,6 +124,15 @@ export default function Contact({
     }
   }, []);
 
+  // Jumping to anchor points if hash is found
+  useEffect(() => {
+    if (document.getElementById("consultationAnchorPoint")) {
+      if (router.asPath.indexOf("#consultation") > -1) {
+        document.getElementById("consultationAnchorPoint").scrollIntoView();
+      }
+    }
+  }, []);
+
   return (
     <div id="PAGE" className="page half-second">
       <PH_Contact />
@@ -135,6 +145,7 @@ export default function Contact({
         <MobileNav />
 
         <ContactTop />
+        <ContactConsultation />
 
         <Footer />
       </div>
