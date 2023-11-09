@@ -198,9 +198,9 @@ export default function BioServices({
 
         <BioServicesTop />
         <BioServicesBio />
-        <BioServicesMissionVision
+        {/** <BioServicesMissionVision
           mission_vision_data={BIO_SERVICES_MISSION_VISION_DATA}
-        />
+        /> */}
         <BioServicesServices
           bio_services_services_data={BIO_SERVICES_SERVICES_DATA}
         />
