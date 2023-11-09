@@ -102,11 +102,11 @@
   border-radius: 3px;
   cursor: pointer;
 }
-.index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link {
+.index_top .index_top_overlay .index_top_overlay_cnt ul .index_link {
   background-color: white;
   color: #040d12;
 }
-.index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link:hover {
+.index_top .index_top_overlay .index_top_overlay_cnt ul .index_link:hover {
   background-color: rgb(197, 197, 197);
 }
 .index_top .index_top_overlay .index_top_overlay_cnt ul .consultation_link {
@@ -283,6 +283,46 @@
   top: 0;
   left: 0;
   filter: brightness(70%);
+}
+
+.index_mission_vision {
+  margin-top: 210px;
+  margin-bottom: 260px;
+}
+.index_mission_vision .index_mission_vision_inner {
+  max-width: 1400px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.index_mission_vision .index_mission_vision_inner .inner_section {
+  margin-bottom: 90px;
+}
+.index_mission_vision .index_mission_vision_inner .inner_section:last-child {
+  margin-bottom: 0;
+}
+.index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt h3 {
+  font-family: "Lato Black";
+  font-size: clamp(1.44rem, 2vw + 1.25rem, 2.15rem);
+  color: #040d12;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt p {
+  font-family: "Lato Regular";
+  font-size: clamp(1rem, 0.54vw + 1rem, 1.33rem);
+  color: #040d12;
+  margin-bottom: 30px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .index_testimonials {
@@ -581,6 +621,20 @@
     height: 45px;
     font-size: 18px;
   }
+  .index_mission_vision {
+    margin-top: 130px;
+    margin-bottom: 150px;
+  }
+  .index_mission_vision .index_mission_vision_inner {
+    max-width: 975px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt h3 {
+    font-size: 37px;
+    max-width: 720px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt p {
+    font-size: 20px;
+  }
   .index_testimonials {
     margin-top: 120px;
     margin-bottom: 100px;
@@ -697,6 +751,21 @@
     height: 40px;
     font-size: 17px;
   }
+  .index_mission_vision {
+    margin-top: 90px;
+    margin-bottom: 80px;
+  }
+  .index_mission_vision .index_mission_vision_inner {
+    max-width: 775px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt h3 {
+    font-size: 32px;
+    max-width: 620px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt p {
+    max-width: 600px;
+    font-size: 17px;
+  }
   .index_testimonials {
     margin-top: 95px;
     margin-bottom: 100px;
@@ -779,7 +848,7 @@
     display: inline-flex;
     font-size: 15px;
   }
-  .index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link {
+  .index_top .index_top_overlay .index_top_overlay_cnt ul .index_link {
     margin-bottom: 12px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
@@ -862,6 +931,25 @@
   .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt div {
     height: 40px;
     font-size: 15px;
+  }
+  .index_mission_vision {
+    margin-top: 10px;
+    margin-bottom: 90px;
+  }
+  .index_mission_vision .index_mission_vision_inner {
+    max-width: 775px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section {
+    margin-bottom: 70px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt h3 {
+    font-size: 22px;
+    max-width: 360px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt p {
+    max-width: 400px;
+    font-size: 15px;
+    margin-bottom: 35px;
   }
   .index_testimonials {
     margin-top: 10px;
@@ -974,7 +1062,7 @@
     display: inline-flex;
     font-size: 14px;
   }
-  .index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link {
+  .index_top .index_top_overlay .index_top_overlay_cnt ul .index_link {
     margin-bottom: 12px;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
@@ -1061,6 +1149,27 @@
   .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt div {
     height: 35px;
     font-size: 14px;
+  }
+  .index_mission_vision {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .index_mission_vision .index_mission_vision_inner {
+    max-width: 775px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section {
+    margin-bottom: 50px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt h3 {
+    font-size: 17px;
+    max-width: 290px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt p {
+    max-width: 265px;
+    font-size: 14px;
+    margin-bottom: 35px;
   }
   .index_testimonials {
     margin-top: 50px;
@@ -1183,7 +1292,7 @@
     display: inline-flex;
     font-size: 15px;
   }
-  .index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link {
+  .index_top .index_top_overlay .index_top_overlay_cnt ul .index_link {
     margin-bottom: 0;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
@@ -1280,6 +1389,27 @@
   .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt div {
     height: 35px;
     font-size: 14px;
+  }
+  .index_mission_vision {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .index_mission_vision .index_mission_vision_inner {
+    max-width: 775px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section {
+    margin-bottom: 50px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt h3 {
+    font-size: 18px;
+    max-width: 260px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt p {
+    max-width: 435px;
+    font-size: 14px;
+    margin-bottom: 35px;
   }
   .index_testimonials {
     margin-top: 70px;
@@ -1397,7 +1527,7 @@
     display: inline-flex;
     font-size: 17px;
   }
-  .index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link {
+  .index_top .index_top_overlay .index_top_overlay_cnt ul .index_link {
     margin-bottom: 0;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
@@ -1490,6 +1620,27 @@
   .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt div {
     height: 40px;
     font-size: 17px;
+  }
+  .index_mission_vision {
+    margin-top: 155px;
+    margin-bottom: 125px;
+  }
+  .index_mission_vision .index_mission_vision_inner {
+    max-width: 775px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section {
+    margin-bottom: 50px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt h3 {
+    font-size: 24px;
+    max-width: 490px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt p {
+    max-width: 565px;
+    font-size: 17px;
+    margin-bottom: 35px;
   }
   .index_testimonials {
     margin-top: 140px;
@@ -1607,7 +1758,7 @@
     display: inline-flex;
     font-size: 16px;
   }
-  .index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link {
+  .index_top .index_top_overlay .index_top_overlay_cnt ul .index_link {
     margin-bottom: 0;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
@@ -1697,6 +1848,27 @@
   .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt div {
     height: 40px;
     font-size: 16px;
+  }
+  .index_mission_vision {
+    margin-top: 110px;
+    margin-bottom: 110px;
+  }
+  .index_mission_vision .index_mission_vision_inner {
+    max-width: 775px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section {
+    margin-bottom: 50px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt h3 {
+    font-size: 21px;
+    max-width: 490px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt p {
+    max-width: 575px;
+    font-size: 16px;
+    margin-bottom: 35px;
   }
   .index_testimonials {
     margin-top: 85px;
@@ -1814,7 +1986,7 @@
     display: inline-flex;
     font-size: 18px;
   }
-  .index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link {
+  .index_top .index_top_overlay .index_top_overlay_cnt ul .index_link {
     margin-bottom: 0;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
@@ -1907,6 +2079,27 @@
   .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt div {
     height: 40px;
     font-size: 16px;
+  }
+  .index_mission_vision {
+    margin-top: 140px;
+    margin-bottom: 140px;
+  }
+  .index_mission_vision .index_mission_vision_inner {
+    max-width: 775px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section {
+    margin-bottom: 50px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt h3 {
+    font-size: 27px;
+    max-width: 590px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt p {
+    max-width: 705px;
+    font-size: 18px;
+    margin-bottom: 45px;
   }
   .index_testimonials {
     margin-top: 105px;
@@ -2024,7 +2217,7 @@
     display: inline-flex;
     font-size: 17px;
   }
-  .index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link {
+  .index_top .index_top_overlay .index_top_overlay_cnt ul .index_link {
     margin-bottom: 0;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
@@ -2114,6 +2307,27 @@
   .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt div {
     height: 45px;
     font-size: 17px;
+  }
+  .index_mission_vision {
+    margin-top: 130px;
+    margin-bottom: 130px;
+  }
+  .index_mission_vision .index_mission_vision_inner {
+    max-width: 775px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section {
+    margin-bottom: 70px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt h3 {
+    font-size: 24px;
+    max-width: 590px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt p {
+    max-width: 625px;
+    font-size: 17px;
+    margin-bottom: 45px;
   }
   .index_testimonials {
     margin-top: 105px;
@@ -2231,7 +2445,7 @@
     display: inline-flex;
     font-size: 18px;
   }
-  .index_top .index_top_overlay .index_top_overlay_cnt ul .bio_services_link {
+  .index_top .index_top_overlay .index_top_overlay_cnt ul .index_link {
     margin-bottom: 0;
   }
   .index_services .index_services_inner .index_services_inner_box .index_services_inner_row .index_services_inner_side {
@@ -2323,6 +2537,27 @@
   .index_consultation .index_consultation_inner .index_consultation_inner_box .index_consultation_inner_row .index_consultation_L .index_consultation_inner_side_cnt div {
     height: 50px;
     font-size: 18px;
+  }
+  .index_mission_vision {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+  .index_mission_vision .index_mission_vision_inner {
+    max-width: 875px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section {
+    margin-bottom: 70px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt h3 {
+    font-size: 31px;
+    max-width: 590px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .index_mission_vision .index_mission_vision_inner .inner_section .inner_section_cnt p {
+    max-width: 805px;
+    font-size: 19px;
+    margin-bottom: 45px;
   }
   .index_testimonials {
     margin-top: 125px;

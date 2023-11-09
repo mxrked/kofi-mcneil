@@ -104,7 +104,7 @@
           cursor: pointer;
         }
 
-        .bio_services_link {
+        .index_link {
           background-color: white;
           color: $BlackPearl;
 
@@ -302,6 +302,50 @@
             left: 0;
             filter: brightness(70%);
           }
+        }
+      }
+    }
+  }
+}
+.index_mission_vision {
+  margin-top: 210px;
+  margin-bottom: 260px;
+
+  .index_mission_vision_inner {
+    max-width: 1400px;
+    padding-left: 50px;
+    padding-right: 50px;
+    @include quickCenter("relative");
+    text-align: center;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    .inner_section {
+      margin-bottom: 90px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .inner_section_cnt {
+        h3 {
+          font-family: "Lato Black";
+          font-size: $Logo;
+          color: $BlackPearl;
+          @include quickCenter("relative");
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+
+        p {
+          font-family: "Lato Regular";
+          font-size: $SmallText;
+          color: $BlackPearl;
+          margin-bottom: 30px;
+          // max-width: 800px;
+          width: 100%;
+          @include quickCenter("relative");
         }
       }
     }
@@ -663,6 +707,28 @@
       }
     }
   }
+  .index_mission_vision {
+    margin-top: 130px;
+    margin-bottom: 150px;
+
+    .index_mission_vision_inner {
+      max-width: 975px;
+
+      .inner_section {
+        .inner_section_cnt {
+          h3 {
+            font-size: clamp(37px, 37px, 37px);
+            max-width: 720px;
+            // margin-left: 0;
+          }
+
+          p {
+            font-size: clamp(20px, 20px, 20px);
+          }
+        }
+      }
+    }
+  }
   .index_testimonials {
     margin-top: 120px;
     margin-bottom: 100px;
@@ -834,6 +900,28 @@
       }
     }
   }
+  .index_mission_vision {
+    margin-top: 90px;
+    margin-bottom: 80px;
+
+    .index_mission_vision_inner {
+      max-width: 775px;
+
+      .inner_section {
+        .inner_section_cnt {
+          h3 {
+            font-size: clamp(31px, 32px, 32px);
+            max-width: 620px;
+          }
+
+          p {
+            max-width: 600px;
+            font-size: clamp(17px, 17px, 17px);
+          }
+        }
+      }
+    }
+  }
   .index_testimonials {
     margin-top: 95px;
     margin-bottom: 100px;
@@ -950,7 +1038,7 @@
             font-size: clamp(15px, 15px, 15px);
           }
 
-          .bio_services_link {
+          .index_link {
             margin-bottom: 12px;
           }
         }
@@ -1062,6 +1150,31 @@
                 font-size: clamp(15px, 15px, 15px);
               }
             }
+          }
+        }
+      }
+    }
+  }
+  .index_mission_vision {
+    margin-top: 10px;
+    margin-bottom: 90px;
+
+    .index_mission_vision_inner {
+      max-width: 775px;
+
+      .inner_section {
+        margin-bottom: 70px;
+
+        .inner_section_cnt {
+          h3 {
+            font-size: clamp(22px, 22px, 22px);
+            max-width: 360px;
+          }
+
+          p {
+            max-width: 400px;
+            font-size: clamp(15px, 15px, 15px);
+            margin-bottom: 35px;
           }
         }
       }
@@ -1219,7 +1332,7 @@
             font-size: clamp(14px, 14px, 14px);
           }
 
-          .bio_services_link {
+          .index_link {
             margin-bottom: 12px;
           }
         }
@@ -1335,6 +1448,33 @@
                 font-size: clamp(14px, 14px, 14px);
               }
             }
+          }
+        }
+      }
+    }
+  }
+  .index_mission_vision {
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    .index_mission_vision_inner {
+      max-width: 775px;
+
+      .inner_section {
+        margin-bottom: 50px;
+
+        .inner_section_cnt {
+          h3 {
+            font-size: clamp(17px, 17px, 17px);
+            max-width: 290px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+          }
+
+          p {
+            max-width: 265px;
+            font-size: clamp(14px, 14px, 14px);
+            margin-bottom: 35px;
           }
         }
       }
@@ -1506,7 +1646,7 @@
             font-size: clamp(15px, 15px, 15px);
           }
 
-          .bio_services_link {
+          .index_link {
             margin-bottom: 0;
           }
         }
@@ -1632,6 +1772,35 @@
                 font-size: clamp(14px, 14px, 14px);
               }
             }
+          }
+        }
+      }
+    }
+  }
+  .index_mission_vision {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    .index_mission_vision_inner {
+      max-width: 775px;
+
+      .inner_section {
+        margin-bottom: 50px;
+
+        .inner_section_cnt {
+          h3 {
+            font-size: clamp(18px, 18px, 18px);
+            max-width: 260px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            // margin-left: 0;
+          }
+
+          p {
+            max-width: 435px;
+            font-size: clamp(14px, 14px, 14px);
+            margin-bottom: 35px;
+            // margin-left: 0;
           }
         }
       }
@@ -1802,7 +1971,7 @@
             font-size: clamp(17px, 17px, 17px);
           }
 
-          .bio_services_link {
+          .index_link {
             margin-bottom: 0;
           }
         }
@@ -1924,6 +2093,33 @@
                 font-size: clamp(17px, 17px, 17px);
               }
             }
+          }
+        }
+      }
+    }
+  }
+  .index_mission_vision {
+    margin-top: 155px;
+    margin-bottom: 125px;
+
+    .index_mission_vision_inner {
+      max-width: 775px;
+
+      .inner_section {
+        margin-bottom: 50px;
+
+        .inner_section_cnt {
+          h3 {
+            font-size: clamp(24px, 24px, 24px);
+            max-width: 490px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+          }
+
+          p {
+            max-width: 565px;
+            font-size: clamp(17px, 17px, 17px);
+            margin-bottom: 35px;
           }
         }
       }
@@ -2090,7 +2286,7 @@
             font-size: clamp(16px, 16px, 16px);
           }
 
-          .bio_services_link {
+          .index_link {
             margin-bottom: 0;
           }
         }
@@ -2210,6 +2406,33 @@
                 font-size: clamp(16px, 16px, 16px);
               }
             }
+          }
+        }
+      }
+    }
+  }
+  .index_mission_vision {
+    margin-top: 110px;
+    margin-bottom: 110px;
+
+    .index_mission_vision_inner {
+      max-width: 775px;
+
+      .inner_section {
+        margin-bottom: 50px;
+
+        .inner_section_cnt {
+          h3 {
+            font-size: clamp(21px, 21px, 21px);
+            max-width: 490px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+          }
+
+          p {
+            max-width: 575px;
+            font-size: clamp(16px, 16px, 16px);
+            margin-bottom: 35px;
           }
         }
       }
@@ -2377,7 +2600,7 @@
             font-size: clamp(18px, 18px, 18px);
           }
 
-          .bio_services_link {
+          .index_link {
             margin-bottom: 0;
           }
         }
@@ -2499,6 +2722,33 @@
                 font-size: clamp(16px, 16px, 16px);
               }
             }
+          }
+        }
+      }
+    }
+  }
+  .index_mission_vision {
+    margin-top: 140px;
+    margin-bottom: 140px;
+
+    .index_mission_vision_inner {
+      max-width: 775px;
+
+      .inner_section {
+        margin-bottom: 50px;
+
+        .inner_section_cnt {
+          h3 {
+            font-size: clamp(27px, 27px, 27px);
+            max-width: 590px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+          }
+
+          p {
+            max-width: 705px;
+            font-size: clamp(18px, 18px, 18px);
+            margin-bottom: 45px;
           }
         }
       }
@@ -2665,7 +2915,7 @@
             font-size: clamp(17px, 17px, 17px);
           }
 
-          .bio_services_link {
+          .index_link {
             margin-bottom: 0;
           }
         }
@@ -2785,6 +3035,33 @@
                 font-size: clamp(17px, 17px, 17px);
               }
             }
+          }
+        }
+      }
+    }
+  }
+  .index_mission_vision {
+    margin-top: 130px;
+    margin-bottom: 130px;
+
+    .index_mission_vision_inner {
+      max-width: 775px;
+
+      .inner_section {
+        margin-bottom: 70px;
+
+        .inner_section_cnt {
+          h3 {
+            font-size: clamp(24px, 24px, 24px);
+            max-width: 590px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+          }
+
+          p {
+            max-width: 625px;
+            font-size: clamp(17px, 17px, 17px);
+            margin-bottom: 45px;
           }
         }
       }
@@ -2951,7 +3228,7 @@
             font-size: clamp(18px, 18px, 18px);
           }
 
-          .bio_services_link {
+          .index_link {
             margin-bottom: 0;
           }
         }
@@ -3073,6 +3350,34 @@
                 font-size: clamp(18px, 18px, 18px);
               }
             }
+          }
+        }
+      }
+    }
+  }
+  .index_mission_vision {
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+    .index_mission_vision_inner {
+      max-width: 875px;
+
+      .inner_section {
+        margin-bottom: 70px;
+
+        .inner_section_cnt {
+          h3 {
+            font-size: clamp(31px, 31px, 31px);
+            max-width: 590px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+            // margin-left: 0;
+          }
+
+          p {
+            max-width: 805px;
+            font-size: clamp(19px, 19px, 19px);
+            margin-bottom: 45px;
           }
         }
       }
