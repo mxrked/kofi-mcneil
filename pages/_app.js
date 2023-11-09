@@ -98,8 +98,10 @@ function MyApp({ Component, pageProps }) {
   //! Displaying the page content after a few seconds and after updateUI updates
   useEffect(() => {
     if (updateUI > 0) {
-      document.getElementById("loadingScreen").style.opacity = 0;
-      document.getElementById("loadingScreen").style.visibility = "hidden";
+      if (document.getElementById("loadingScreen")) {
+        document.getElementById("loadingScreen").style.opacity = 0;
+        document.getElementById("loadingScreen").style.visibility = "hidden";
+      }
 
       setTimeout(() => {
         document.body.style.overflowY = "auto";
