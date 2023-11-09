@@ -82,6 +82,61 @@
   margin-right: auto;
 }
 
+.contact_consultation {
+  margin-top: 130px;
+  margin-bottom: 130px;
+  overflow: hidden;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+.contact_consultation .contact_consultation_inner {
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact_consultation .contact_consultation_inner h2 {
+  font-family: "Lato Black";
+  font-size: clamp(1.84rem, 2.14vw + 1.65rem, 2.95rem);
+  color: #040d12;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.contact_consultation .contact_consultation_inner p {
+  font-family: "Lato Regular";
+  font-size: clamp(1rem, 0.54vw + 1rem, 1.33rem);
+  color: #040d12;
+  margin-bottom: 30px;
+  max-width: 800px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact_consultation .contact_consultation_inner a {
+  height: 50px;
+  font-family: "Lato Bold";
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #256d85;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 25px;
+}
+.contact_consultation .contact_consultation_inner a:hover {
+  background-color: #00a9ff;
+}
+
 @media all and (max-width: 1995px) {
   .contact_top {
     height: 510px;
@@ -98,6 +153,21 @@
   }
   .contact_top .contact_top_overlay .contact_top_overlay_cnt p {
     font-size: 20px;
+  }
+  .contact_consultation {
+    margin-top: 90px;
+    margin-bottom: 100px;
+  }
+  .contact_consultation .contact_consultation_inner h2 {
+    font-size: 42px;
+    max-width: 720px;
+  }
+  .contact_consultation .contact_consultation_inner p {
+    font-size: 20px;
+  }
+  .contact_consultation .contact_consultation_inner a {
+    height: 45px;
+    font-size: 18px;
   }
 }
 @media all and (max-width: 991px) {
@@ -125,6 +195,22 @@
     height: 40px;
     font-size: 17px;
   }
+  .contact_consultation {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  .contact_consultation .contact_consultation_inner h2 {
+    font-size: 37px;
+    max-width: 620px;
+  }
+  .contact_consultation .contact_consultation_inner p {
+    max-width: 600px;
+    font-size: 17px;
+  }
+  .contact_consultation .contact_consultation_inner a {
+    height: 40px;
+    font-size: 17px;
+  }
 }
 @media all and (max-width: 768px) {
   .contact_top {
@@ -144,6 +230,23 @@
     max-width: 400px;
     font-size: 15px;
   }
+  .contact_consultation {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .contact_consultation .contact_consultation_inner h2 {
+    font-size: 27px;
+    max-width: 360px;
+  }
+  .contact_consultation .contact_consultation_inner p {
+    max-width: 400px;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .contact_consultation .contact_consultation_inner a {
+    height: 40px;
+    font-size: 15px;
+  }
 }
 @media all and (max-width: 419px) {
   .contact_top {
@@ -157,12 +260,31 @@
   }
   .contact_top .contact_top_overlay .contact_top_overlay_cnt h1 {
     font-size: 21px;
-    max-width: 290px;
+    max-width: 250px;
     margin-top: 10px;
     margin-bottom: 15px;
   }
   .contact_top .contact_top_overlay .contact_top_overlay_cnt p {
     max-width: 265px;
+    font-size: 14px;
+  }
+  .contact_consultation {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .contact_consultation .contact_consultation_inner h2 {
+    font-size: 21px;
+    max-width: 290px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .contact_consultation .contact_consultation_inner p {
+    max-width: 265px;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  .contact_consultation .contact_consultation_inner a {
+    height: 35px;
     font-size: 14px;
   }
 }
@@ -186,6 +308,27 @@
     max-width: 385px;
     font-size: 15px;
   }
+  .contact_consultation {
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+  .contact_consultation .contact_consultation_inner {
+    max-width: 560px;
+  }
+  .contact_consultation .contact_consultation_inner h2 {
+    font-size: 25px;
+    max-width: 260px;
+    margin-bottom: 15px;
+  }
+  .contact_consultation .contact_consultation_inner p {
+    max-width: 365px;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  .contact_consultation .contact_consultation_inner a {
+    height: 35px;
+    font-size: 14px;
+  }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .contact_top {
@@ -205,6 +348,28 @@
   }
   .contact_top .contact_top_overlay .contact_top_overlay_cnt p {
     max-width: 545px;
+    font-size: 17px;
+  }
+  .contact_consultation {
+    margin-top: 60px;
+    margin-bottom: 65px;
+  }
+  .contact_consultation .contact_consultation_inner {
+    max-width: 560px;
+  }
+  .contact_consultation .contact_consultation_inner h2 {
+    font-size: 27px;
+    max-width: 490px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .contact_consultation .contact_consultation_inner p {
+    max-width: 560px;
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+  .contact_consultation .contact_consultation_inner a {
+    height: 40px;
     font-size: 17px;
   }
 }
@@ -228,6 +393,28 @@
     max-width: 525px;
     font-size: 16px;
   }
+  .contact_consultation {
+    margin-top: 50px;
+    margin-bottom: 45px;
+  }
+  .contact_consultation .contact_consultation_inner {
+    max-width: 560px;
+  }
+  .contact_consultation .contact_consultation_inner h2 {
+    font-size: 24px;
+    max-width: 490px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .contact_consultation .contact_consultation_inner p {
+    max-width: 525px;
+    font-size: 16px;
+    margin-bottom: 35px;
+  }
+  .contact_consultation .contact_consultation_inner a {
+    height: 40px;
+    font-size: 16px;
+  }
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .contact_top {
@@ -248,6 +435,28 @@
   .contact_top .contact_top_overlay .contact_top_overlay_cnt p {
     max-width: 585px;
     font-size: 18px;
+  }
+  .contact_consultation {
+    margin-top: 80px;
+    margin-bottom: 75px;
+  }
+  .contact_consultation .contact_consultation_inner {
+    max-width: 650px;
+  }
+  .contact_consultation .contact_consultation_inner h2 {
+    font-size: 31px;
+    max-width: 590px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .contact_consultation .contact_consultation_inner p {
+    max-width: 585px;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .contact_consultation .contact_consultation_inner a {
+    height: 40px;
+    font-size: 16px;
   }
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
@@ -270,6 +479,28 @@
     max-width: 535px;
     font-size: 17px;
   }
+  .contact_consultation {
+    margin-top: 80px;
+    margin-bottom: 75px;
+  }
+  .contact_consultation .contact_consultation_inner {
+    max-width: 650px;
+  }
+  .contact_consultation .contact_consultation_inner h2 {
+    font-size: 31px;
+    max-width: 590px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .contact_consultation .contact_consultation_inner p {
+    max-width: 585px;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .contact_consultation .contact_consultation_inner a {
+    height: 40px;
+    font-size: 16px;
+  }
 }
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   .contact_top {
@@ -290,5 +521,27 @@
   .contact_top .contact_top_overlay .contact_top_overlay_cnt p {
     max-width: 615px;
     font-size: 19px;
+  }
+  .contact_consultation {
+    margin-top: 110px;
+    margin-bottom: 115px;
+  }
+  .contact_consultation .contact_consultation_inner {
+    max-width: 750px;
+  }
+  .contact_consultation .contact_consultation_inner h2 {
+    font-size: 34px;
+    max-width: 590px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .contact_consultation .contact_consultation_inner p {
+    max-width: 705px;
+    font-size: 19px;
+    margin-bottom: 35px;
+  }
+  .contact_consultation .contact_consultation_inner a {
+    height: 50px;
+    font-size: 18px;
   }
 }/*# sourceMappingURL=Contact.module.css.map */
