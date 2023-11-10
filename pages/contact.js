@@ -21,6 +21,8 @@ import { Footer } from "@/assets/components/global/Footer/Footer";
 
 import { ContactTop } from "@/assets/components/pages/Contact/ContactTop";
 import { ContactConsultation } from "@/assets/components/pages/Contact/ContactConsultation";
+import { ContactForm } from "@/assets/components/pages/Contact/ContactForm";
+import { SubmissionSuccessMessage } from "@/assets/components/global/All/SubmissionSuccessMessage";
 
 // Style Imports
 // import "../assets/styles/modules/Contact/Contact.module.css";
@@ -131,6 +133,36 @@ export default function Contact({
         document.getElementById("consultationAnchorPoint").scrollIntoView();
       }
     }
+
+    if (document.getElementById("contactFormAnchorPoint")) {
+      if (router.asPath.indexOf("#contact_form") > -1) {
+        document.getElementById("contactFormAnchorPoint").scrollIntoView();
+      }
+    }
+  }, []);
+
+  // Displaying the submission form success message if sent
+  useEffect(() => {
+    if (sessionStorage.getItem("Submission Sent")) {
+      document.getElementById("submissionSuccessMessage").style.display =
+        "flex";
+      document
+        .getElementById("submissionSuccessMessage")
+        .querySelector("button").style.pointerEvents = "auto";
+
+      document.getElementById("submissionSuccessMessage").style.opacity = 1;
+      document.getElementById("submissionSuccessMessage").style.visibility =
+        "visible";
+
+      setTimeout(() => {
+        document.getElementById("submissionSuccessMessage").style.opacity = 0;
+        document.getElementById("submissionSuccessMessage").style.visibility =
+          "hidden";
+        document
+          .getElementById("submissionSuccessMessage")
+          .querySelector("button").style.pointerEvents = "none";
+      }, 7000);
+    }
   }, []);
 
   return (
@@ -138,6 +170,7 @@ export default function Contact({
       <PH_Contact />
       <LoadingScreen />
       <MobileNavMenu />
+      <SubmissionSuccessMessage />
 
       <div id="PAGE_CNT" className="page-cnt half-second">
         <NavTop />
@@ -146,6 +179,7 @@ export default function Contact({
 
         <ContactTop />
         <ContactConsultation />
+        <ContactForm />
 
         <Footer />
       </div>
