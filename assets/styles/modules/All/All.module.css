@@ -47,4 +47,178 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.submission_success_message {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 450px;
+  height: 180px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  white-space: pre-wrap;
+  background-color: rgb(244, 244, 244);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 600;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.218);
+}
+.submission_success_message button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0.7;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.submission_success_message .submission_success_message_cnt {
+  display: block;
+  text-align: center;
+}
+.submission_success_message .submission_success_message_cnt .icon {
+  color: green;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.submission_success_message .submission_success_message_cnt span {
+  font-family: "Noto Sans Regular";
+  font-size: 18px;
+  display: block;
+}
+
+@media all and (max-width: 1995px) {
+  .submission_success_message {
+    max-width: 400px;
+    height: 150px;
+  }
+  .submission_success_message .submission_success_message_cnt span {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 991px) {
+  .submission_success_message {
+    max-width: 400px;
+    height: 150px;
+  }
+  .submission_success_message .submission_success_message_cnt span {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 768px) {
+  .submission_success_message {
+    max-width: 300px;
+    height: 150px;
+  }
+  .submission_success_message .submission_success_message_cnt {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .submission_success_message .submission_success_message_cnt span {
+    font-size: 13px;
+  }
+}
+@media all and (max-width: 419px) {
+  .submission_success_message {
+    max-width: 95%;
+    height: 130px;
+  }
+  .submission_success_message .submission_success_message_cnt {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .submission_success_message .submission_success_message_cnt span {
+    font-size: 13px;
+  }
+}
+@media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .submission_success_message {
+    max-width: 350px;
+    height: 120px;
+  }
+  .submission_success_message .submission_success_message_cnt {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .submission_success_message .submission_success_message_cnt span {
+    font-size: 13px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .submission_success_message {
+    max-width: 390px;
+    height: 150px;
+  }
+  .submission_success_message .submission_success_message_cnt {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .submission_success_message .submission_success_message_cnt span {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .submission_success_message {
+    max-width: 390px;
+    height: 150px;
+  }
+  .submission_success_message .submission_success_message_cnt {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .submission_success_message .submission_success_message_cnt span {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .submission_success_message {
+    max-width: 420px;
+    height: 170px;
+  }
+  .submission_success_message .submission_success_message_cnt {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .submission_success_message .submission_success_message_cnt span {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .submission_success_message {
+    max-width: 420px;
+    height: 170px;
+  }
+  .submission_success_message .submission_success_message_cnt {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .submission_success_message .submission_success_message_cnt span {
+    font-size: 16px;
+  }
+}
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .submission_success_message {
+    max-width: 420px;
+    height: 170px;
+  }
+  .submission_success_message .submission_success_message_cnt {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .submission_success_message .submission_success_message_cnt span {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=All.module.css.map */

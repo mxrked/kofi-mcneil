@@ -253,11 +253,20 @@
         height: 350px;
         width: 100%;
         @include quickCenter("relative");
+        position: relative;
 
         .bg {
           width: 100%;
           height: 100%;
           @include bGSU(cover, center);
+        }
+
+        .bg_placeholder {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
         }
       }
 

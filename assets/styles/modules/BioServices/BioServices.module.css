@@ -232,6 +232,7 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 .bio_services_services .bio_services_services_inner .bio_services_services_inner_top .bio_services_services_inner_top_bg_holder .bg {
   width: 100%;
@@ -239,6 +240,13 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.bio_services_services .bio_services_services_inner .bio_services_services_inner_top .bio_services_services_inner_top_bg_holder .bg_placeholder {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .bio_services_services .bio_services_services_inner .bio_services_services_inner_top .bio_services_services_inner_top_text {
   text-align: center;
