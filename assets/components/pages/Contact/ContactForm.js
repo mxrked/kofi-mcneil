@@ -177,6 +177,8 @@ export const ContactForm = () => {
       FORM_ELEMENTS[1].style.borderColor = "red";
       document.getElementById("formHint").innerText =
         "Error: You cannot have a space as the first value or empty inputs.";
+
+      document.getElementById("formHint").scrollIntoView();
     }
     if (SVC_LN) {
       ResetBorderColor("input", FORM_ELEMENTS[1]);
@@ -193,6 +195,8 @@ export const ContactForm = () => {
     if (!SVC_FN || !SVC_LN) {
       document.getElementById("formHint").innerText =
         "Error: You cannot have a space as the first value or empty inputs.";
+
+      document.getElementById("formHint").scrollIntoView();
     }
 
     // Row 2
@@ -229,6 +233,8 @@ export const ContactForm = () => {
     if (!SVC_EMAIL || !SVC_PHONE) {
       document.getElementById("formHint").innerText =
         "Error: You cannot have a space as the first value or empty inputs.";
+
+      document.getElementById("formHint").scrollIntoView();
     }
 
     // Making sure that rowOne passes before showing email and phone error
@@ -236,11 +242,15 @@ export const ContactForm = () => {
       if (!CHECK_EMAIL) {
         document.getElementById("formHint").innerText =
           "Error: That is not a valid email address.";
+
+        document.getElementById("formHint").scrollIntoView();
       }
 
       if (!CHECK_PHONE) {
         document.getElementById("formHint").innerText =
           "Error: That is not a valid phone number.";
+
+        document.getElementById("formHint").scrollIntoView();
       }
     }
 
@@ -249,6 +259,8 @@ export const ContactForm = () => {
       FORM_ELEMENTS[4].style.borderColor = "red";
       document.getElementById("formHint").innerText =
         "Error: You must select a IT section.";
+
+      document.getElementById("formHint").scrollIntoView();
       // alert(document.getElementById("formHint").innerText);
       // rowThreePassed = false;
     }
@@ -292,6 +304,8 @@ export const ContactForm = () => {
     if (!SVC_SUBJECT || !SVC_MESSAGE) {
       document.getElementById("formHint").innerText =
         "Error: You cannot have a space as the first value or empty inputs.";
+
+      document.getElementById("formHint").scrollIntoView();
     }
 
     // Checking if all rows passed
