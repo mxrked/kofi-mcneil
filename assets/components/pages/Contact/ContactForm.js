@@ -136,6 +136,7 @@ export const ContactForm = () => {
       SUBJECT,
       MESSAGE,
     ];
+    const FORM_SETS = document.querySelectorAll(".form-set");
 
     // Validation flags for non-empty values in different rows
     let rowOnePassed = false;
@@ -166,6 +167,14 @@ export const ContactForm = () => {
     // Row 1
     if (!SVC_FN) {
       FORM_ELEMENTS[0].style.borderColor = "red";
+      document.getElementById("formHint").innerText =
+        "Error: You cannot have a space as the first value or empty inputs.";
+
+      // Adding shake animation
+      FORM_SETS[0].classList.add("shake-element");
+      setTimeout(() => {
+        FORM_SETS[0].classList.remove("shake-element");
+      }, 500);
     }
     if (SVC_FN) {
       ResetBorderColor("input", FORM_ELEMENTS[0]);
@@ -177,6 +186,12 @@ export const ContactForm = () => {
       FORM_ELEMENTS[1].style.borderColor = "red";
       document.getElementById("formHint").innerText =
         "Error: You cannot have a space as the first value or empty inputs.";
+
+      // Adding shake animation
+      FORM_SETS[1].classList.add("shake-element");
+      setTimeout(() => {
+        FORM_SETS[1].classList.remove("shake-element");
+      }, 500);
 
       document.getElementById("formHint").scrollIntoView();
     }
@@ -202,6 +217,12 @@ export const ContactForm = () => {
     // Row 2
     if (!SVC_EMAIL || !CHECK_EMAIL) {
       FORM_ELEMENTS[2].style.borderColor = "red";
+
+      // Adding shake animation
+      FORM_SETS[2].classList.add("shake-element");
+      setTimeout(() => {
+        FORM_SETS[2].classList.remove("shake-element");
+      }, 500);
     }
     if (rowOnePassed) {
       if (SVC_EMAIL && CHECK_EMAIL) {
@@ -213,6 +234,12 @@ export const ContactForm = () => {
 
     if (!SVC_PHONE || !CHECK_PHONE) {
       FORM_ELEMENTS[3].style.borderColor = "red";
+
+      // Adding shake animation
+      FORM_SETS[3].classList.add("shake-element");
+      setTimeout(() => {
+        FORM_SETS[3].classList.remove("shake-element");
+      }, 500);
     }
     if (rowOnePassed) {
       if (SVC_PHONE && CHECK_PHONE) {
@@ -243,12 +270,24 @@ export const ContactForm = () => {
         document.getElementById("formHint").innerText =
           "Error: That is not a valid email address.";
 
+        // Adding shake animation
+        FORM_SETS[2].classList.add("shake-element");
+        setTimeout(() => {
+          FORM_SETS[2].classList.remove("shake-element");
+        }, 500);
+
         document.getElementById("formHint").scrollIntoView();
       }
 
       if (!CHECK_PHONE) {
         document.getElementById("formHint").innerText =
           "Error: That is not a valid phone number.";
+
+        // Adding shake animation
+        FORM_SETS[3].classList.add("shake-element");
+        setTimeout(() => {
+          FORM_SETS[3].classList.remove("shake-element");
+        }, 500);
 
         document.getElementById("formHint").scrollIntoView();
       }
@@ -259,6 +298,12 @@ export const ContactForm = () => {
       FORM_ELEMENTS[4].style.borderColor = "red";
       document.getElementById("formHint").innerText =
         "Error: You must select a IT section.";
+
+      // Adding shake animation
+      FORM_SETS[4].classList.add("shake-element");
+      setTimeout(() => {
+        FORM_SETS[4].classList.remove("shake-element");
+      }, 500);
 
       document.getElementById("formHint").scrollIntoView();
       // alert(document.getElementById("formHint").innerText);
@@ -277,6 +322,13 @@ export const ContactForm = () => {
     // Row 4
     if (!SVC_SUBJECT) {
       FORM_ELEMENTS[5].style.borderColor = "red";
+
+      // Adding shake animation
+      FORM_SETS[5].classList.add("shake-element");
+      setTimeout(() => {
+        FORM_SETS[5].classList.remove("shake-element");
+      }, 500);
+
       // alert(document.getElementById("formHint").innerText);
     }
     if (rowOnePassed && rowTwoPassed && rowThreePassed) {
@@ -291,6 +343,12 @@ export const ContactForm = () => {
     // Row 5
     if (!SVC_MESSAGE) {
       FORM_ELEMENTS[6].style.borderColor = "red";
+
+      // Adding shake animation
+      FORM_SETS[6].classList.add("shake-element");
+      setTimeout(() => {
+        FORM_SETS[6].classList.remove("shake-element");
+      }, 500);
     }
     if (rowOnePassed && rowTwoPassed && rowThreePassed && rowFourPassed) {
       if (SVC_MESSAGE) {
@@ -407,7 +465,7 @@ export const ContactForm = () => {
                 <div
                   className={`${styles.form_side} ${styles.form_L} col-lg-6 col-md-6 col-sm-12 col-xs-12`}
                 >
-                  <div className={`${styles.form_side_inner}`}>
+                  <div className={`${styles.form_side_inner} form-set`}>
                     <label
                       for="contactFirstName"
                       className="orientation-change-element half-second"
@@ -426,7 +484,7 @@ export const ContactForm = () => {
                 <div
                   className={`${styles.form_side} ${styles.form_R} col-lg-6 col-md-6 col-sm-12 col-xs-12`}
                 >
-                  <div className={`${styles.form_side_inner}`}>
+                  <div className={`${styles.form_side_inner} form-set`}>
                     <label
                       for="contactLastName"
                       className="orientation-change-element half-second"
@@ -447,7 +505,7 @@ export const ContactForm = () => {
                 <div
                   className={`${styles.form_side} ${styles.form_L} col-lg-6 col-md-6 col-sm-12 col-xs-12`}
                 >
-                  <div className={`${styles.form_side_inner}`}>
+                  <div className={`${styles.form_side_inner} form-set`}>
                     <label
                       for="contactEmail"
                       className="orientation-change-element half-second"
@@ -466,7 +524,7 @@ export const ContactForm = () => {
                 <div
                   className={`${styles.form_side} ${styles.form_R} col-lg-6 col-md-6 col-sm-12 col-xs-12`}
                 >
-                  <div className={`${styles.form_side_inner}`}>
+                  <div className={`${styles.form_side_inner} form-set`}>
                     <label
                       for="contactPhoneNumber"
                       className="orientation-change-element half-second"
@@ -488,7 +546,7 @@ export const ContactForm = () => {
                 <div
                   className={`${styles.form_side} ${styles.select_side} col-lg-12 col-md-12 col-sm-12 col-xs-12`}
                 >
-                  <div className={`${styles.form_side_inner}`}>
+                  <div className={`${styles.form_side_inner} form-set`}>
                     <label
                       for="contactITCategory"
                       className="orientation-change-element half-second"
@@ -512,7 +570,7 @@ export const ContactForm = () => {
                 <div
                   className={`${styles.form_side} ${styles.subject_side} col-lg-12 col-md-12 col-sm-12 col-xs-12`}
                 >
-                  <div className={`${styles.form_side_inner}`}>
+                  <div className={`${styles.form_side_inner} form-set`}>
                     <label
                       for="contactSubject"
                       className="orientation-change-element half-second"
@@ -533,7 +591,7 @@ export const ContactForm = () => {
                 <div
                   className={`${styles.form_side} ${styles.message_side} col-lg-12 col-md-12 col-sm-12 col-xs-12`}
                 >
-                  <div className={`${styles.form_side_inner}`}>
+                  <div className={`${styles.form_side_inner} form-set`}>
                     <label
                       for="contactMessage"
                       className="orientation-change-element half-second"
