@@ -145,15 +145,15 @@ export const BioServicesBio = () => {
             including:
           </p>
 
-          <ol>
+          <ol style={{ display: "grid" }}>
             {SOFT_SKILLS.map((skill) => (
               <li key={skill.softSkillID}>
                 <span className={`${styles.skill_number_and_name}`}>
-                  <span
+                  {/** <span
                     className={`${styles.skill_number} orientation-change-element half-second`}
                   >
                     {skill.softSkillNumber}.
-                  </span>
+                  </span> */}
 
                   <span
                     className={`${styles.skill_name} orientation-change-element half-second`}
@@ -162,9 +162,9 @@ export const BioServicesBio = () => {
                   </span>
                 </span>
 
-                <p className="orientation-change-element half-second">
+                {/** <p className="orientation-change-element half-second">
                   {skill.softSkillText}
-                </p>
+                </p> */}
               </li>
             ))}
           </ol>
