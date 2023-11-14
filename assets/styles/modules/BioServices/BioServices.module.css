@@ -153,6 +153,10 @@
 .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol {
   margin-top: 50px;
   margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  grid-template-columns: repeat(2, auto);
 }
 .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name {
   display: flex;
@@ -707,6 +711,10 @@
     margin-top: 40px;
     margin-bottom: 50px;
   }
+  .bio_services_bio .bio_services_bio_inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_img_holder {
     max-width: 230px;
     height: 230px;
@@ -729,6 +737,12 @@
     max-width: 265px;
     font-size: 14px;
     margin-bottom: 35px;
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol {
+    grid-template-columns: repeat(2, auto);
+  }
+  .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li {
+    margin-bottom: 5px;
   }
   .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_name,
   .bio_services_bio .bio_services_bio_inner .bio_services_bio_inner_text ol li .skill_number_and_name .skill_number {
