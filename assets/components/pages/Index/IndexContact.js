@@ -40,7 +40,7 @@ export const IndexContact = () => {
             </span>
 
             <h2 className="orientation-change-element half-second">
-              Get in Touch with Kofi Mcneil: Your IT Public Speaking Expert
+              Get in Touch with Kofi Mcneil: Your IT Public Speaking Consultant.
             </h2>
 
             <p className="orientation-change-element half-second">

@@ -30,7 +30,7 @@ export const ContactTop = () => {
             Contact/Book a Consultation:
           </span>
           <h1 className="orientation-change-element half-second">
-            Get in Touch with Kofi Mcneil: Your IT Public Speaking Expert
+            Get in Touch with Kofi Mcneil: Your IT Public Speaking Consultant.
           </h1>
 
           <p className="orientation-change-element half-second">
