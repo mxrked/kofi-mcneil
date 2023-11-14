@@ -44,14 +44,15 @@ export const IndexContact = () => {
             </h2>
 
             <p className="orientation-change-element half-second">
-              Contact Kofi Mcneil, the IT public speaking expert, to discuss how
-              he can help Programmers, Developers, Penetration Testers, Red
-              Team, Blue Team, SOC Analysts, CISO Officers, and other IT
-              professionals enhance their communication abilities and make a
-              lasting impact in the tech world. Whether you're a seasoned pro or
-              just starting your journey, Kofi's coaching empowers you with the
-              skills and confidence to succeed. Unlock your full potential in IT
-              public speaking—reach out to Kofi Mcneil today.
+              Contact Kofi Mcneil, the IT public speaking consultant, to discuss
+              how he can help Programmers, Developers, Penetration Testers, Red
+              Team, Blue Team, SOC Analysts and CISO Officers. Kofi helps IT
+              professionals enhance their communication abilities and soft
+              skills to make a lasting impact in the tech world. Whether you're
+              a seasoned pro or just starting your journey, Kofi's coaching
+              empowers you with the skills and confidence to succeed. Unlock
+              your full potential in IT public speaking—reach out to Kofi Mcneil
+              today.
             </p>
 
             <div
