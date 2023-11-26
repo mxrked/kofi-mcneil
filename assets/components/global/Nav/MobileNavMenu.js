@@ -86,7 +86,7 @@ export const MobileNavMenu = () => {
               <span
                 className={`${styles.bottom_text} orientation-change-element half-second`}
               >
-                Kofi Mcneil - Soft Skill Focus, IT Driven
+                Soft Skill Focus, IT Driven
               </span>
             </div>
           </div>
