@@ -22,7 +22,7 @@ Demo: https://softskillitcommunications.com/
 
 ## Started Developement - 11/3/2023
 
-## Ended Development - IN PROGRESS
+## Ended Development - 11/26/2023
 
 ## Status
 
