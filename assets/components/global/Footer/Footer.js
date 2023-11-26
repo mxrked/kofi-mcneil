@@ -55,10 +55,18 @@ export const Footer = () => {
                         ommunications
                       </span>
 
+                      {/**
+                    <span
+                      className={`${styles.bottom_text} orientation-change-element half-second`}
+                    >
+                      Kofi Mcneil - IT Public Speaker/Consultant
+                    </span>
+                    */}
+
                       <span
                         className={`${styles.bottom_text} orientation-change-element half-second`}
                       >
-                        Kofi Mcneil - IT Public Speaker/Consultant
+                        Soft Skill Focus, IT Driven
                       </span>
                     </div>
                   ) : (
@@ -75,10 +83,18 @@ export const Footer = () => {
                         ommunications
                       </span>
 
+                      {/**
+                    <span
+                      className={`${styles.bottom_text} orientation-change-element half-second`}
+                    >
+                      Kofi Mcneil - IT Public Speaker/Consultant
+                    </span>
+                    */}
+
                       <span
                         className={`${styles.bottom_text} orientation-change-element half-second`}
                       >
-                        Kofi Mcneil - IT Public Speaker/Consultant
+                        Soft Skill Focus, IT Driven
                       </span>
                     </div>
                   )}

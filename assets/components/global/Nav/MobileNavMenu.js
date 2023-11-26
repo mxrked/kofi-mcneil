@@ -75,10 +75,18 @@ export const MobileNavMenu = () => {
                 ommunications
               </span>
 
+              {/**
+                    <span
+                      className={`${styles.bottom_text} orientation-change-element half-second`}
+                    >
+                      Kofi Mcneil - IT Public Speaker/Consultant
+                    </span>
+                    */}
+
               <span
                 className={`${styles.bottom_text} orientation-change-element half-second`}
               >
-                Kofi Mcneil - IT Public Speaker/Consultant
+                Kofi Mcneil - Soft Skill Focus, IT Driven
               </span>
             </div>
           </div>

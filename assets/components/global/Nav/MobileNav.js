@@ -43,11 +43,18 @@ export const MobileNav = () => {
                       <span className={`${styles.colored_text}`}>C</span>
                       ommunications
                     </span>
-
+                    {/**
                     <span
                       className={`${styles.bottom_text} orientation-change-element half-second`}
                     >
                       Kofi Mcneil - IT Public Speaker/Consultant
+                    </span>
+                    */}
+
+                    <span
+                      className={`${styles.bottom_text} orientation-change-element half-second`}
+                    >
+                      Soft Skill Focus, IT Driven
                     </span>
                   </div>
                 ) : (
@@ -64,10 +71,18 @@ export const MobileNav = () => {
                       ommunications
                     </span>
 
+                    {/**
                     <span
                       className={`${styles.bottom_text} orientation-change-element half-second`}
                     >
                       Kofi Mcneil - IT Public Speaker/Consultant
+                    </span>
+                    */}
+
+                    <span
+                      className={`${styles.bottom_text} orientation-change-element half-second`}
+                    >
+                      Soft Skill Focus, IT Driven
                     </span>
                   </div>
                 )}
