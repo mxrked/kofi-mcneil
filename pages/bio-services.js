@@ -18,6 +18,7 @@ import { DesktopNav } from "@/assets/components/global/Nav/DesktopNav";
 import { MobileNav } from "@/assets/components/global/Nav/MobileNav";
 import { MobileNavMenu } from "@/assets/components/global/Nav/MobileNavMenu";
 import { Footer } from "@/assets/components/global/Footer/Footer";
+import { PaymentRequiredWall } from "@/assets/components/global/All/PaymentRequiredWall";
 
 import { BioServicesTop } from "@/assets/components/pages/BioServices/BioServicesTop";
 import { BioServicesBio } from "@/assets/components/pages/BioServices/BioServicesBio";
@@ -190,6 +191,7 @@ export default function BioServices({
       <PH_BioServices />
       <LoadingScreen />
       <MobileNavMenu />
+      <PaymentRequiredWall />
 
       <div id="PAGE_CNT" className="page-cnt half-second">
         <NavTop />

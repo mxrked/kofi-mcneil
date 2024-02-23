@@ -10,6 +10,7 @@ import TriggerPageExit from "@/assets/functions/dom/triggers/TriggerPageExit";
 
 // Component Imports
 import { LoadingScreen } from "@/assets/components/global/All/LoadingScreen";
+import { PaymentRequiredWall } from "@/assets/components/global/All/PaymentRequiredWall";
 
 // Style Imports
 import "../assets/styles/modules/404/404.module.css";
@@ -188,6 +189,7 @@ export default function NotFound() {
         />
       </Head>
       <LoadingScreen />
+      <PaymentRequiredWall />
 
       <div id="PAGE_CNT" className={`${styles.pageCnt} page-cnt`}>
         <div className={`${styles.not_found_inner}`}>

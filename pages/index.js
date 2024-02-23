@@ -18,6 +18,7 @@ import { DesktopNav } from "@/assets/components/global/Nav/DesktopNav";
 import { MobileNav } from "@/assets/components/global/Nav/MobileNav";
 import { MobileNavMenu } from "@/assets/components/global/Nav/MobileNavMenu";
 import { Footer } from "@/assets/components/global/Footer/Footer";
+import { PaymentRequiredWall } from "@/assets/components/global/All/PaymentRequiredWall";
 
 import { IndexTop } from "@/assets/components/pages/Index/IndexTop";
 import { IndexServices } from "@/assets/components/pages/Index/IndexServices";
@@ -159,6 +160,7 @@ export default function Home({
       <PH_Index />
       <LoadingScreen />
       <MobileNavMenu />
+      <PaymentRequiredWall />
 
       <div id="PAGE_CNT" className="page-cnt half-second">
         <NavTop />
