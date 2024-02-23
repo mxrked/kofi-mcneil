@@ -146,6 +146,10 @@ select {
   background-color: transparent;
 }
 
+.page {
+  position: relative;
+}
+
 .page-cnt {
   position: relative;
   height: 100%;
