@@ -292,9 +292,13 @@ export const Footer = () => {
 
       <div className={`${styles.footer_bottom}`}>
         <span>
-          Created by{" "}
-          <a href="https://www.codingthefront.com" className="half-second">
-            codingthefront.com
+          Website created by{" "}
+          <a
+            href="https://dynamicwebtechnologies.com/"
+            target={"_blank"}
+            className="orientation-change-element half-second"
+          >
+            Dynamic Web Technologies
           </a>
         </span>
       </div>
